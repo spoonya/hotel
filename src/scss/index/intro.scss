@@ -6,6 +6,18 @@
 
 .intro__inner {
 	padding-top: rem(619);
+
+	@include media-desktop {
+		padding-top: 400px;
+	}
+
+	@include media-tablet-lg {
+		padding-top: 250px;
+	}
+
+	@include media-tablet-sm {
+		padding-top: 120px;
+	}
 }
 
 .intro__content {
