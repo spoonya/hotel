@@ -1,0 +1,32 @@
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.title {
+}
+
+.button {
+	background-color: $whiteAlpha;
+	color: $blackAlpha;
+
+	padding: 12px 18px;
+
+	transition: background-color 0.1s linear;
+
+	&:hover {
+		background-color: darken($whiteAlpha, 7);
+	}
+}
+
+.social-list {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: rem(20);
+}

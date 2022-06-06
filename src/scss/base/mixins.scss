@@ -1,0 +1,217 @@
+//Подключение шрифта
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff2") format("woff2"),
+			url("../fonts/#{$file_name}.woff") format("woff");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+//Media
+@mixin media-desktop {
+	@media only screen and (max-width: $media-xxl) {
+		@content;
+	}
+}
+
+@mixin media-laptop {
+	@media only screen and (max-width: $media-xl) {
+		@content;
+	}
+}
+
+@mixin media-tablet-lg {
+	@media only screen and (max-width: $media-lg) {
+		@content;
+	}
+}
+
+@mixin media-tablet-sm {
+	@media only screen and (max-width: $media-md) {
+		@content;
+	}
+}
+
+@mixin media-phone-lg {
+	@media only screen and (max-width: $media-sm) {
+		@content;
+	}
+}
+
+@mixin media-phone-sm {
+	@media only screen and (max-width: $media-xs) {
+		@content;
+	}
+}
+
+@mixin media-custom($width) {
+	@media only screen and (max-width: $width) {
+		@content;
+	}
+}
+
+@mixin media-custom-mf($width) {
+	@media only screen and (min-width: $width) {
+		@content;
+	}
+}
+
+//Outline
+@mixin outline {
+	outline: 2px solid #4d90fe;
+}
+
+//Scroll
+@mixin elementScroll {
+	&::-webkit-scrollbar {
+		width: 8px;
+		background: $whiteAlpha;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $blackAlpha;
+	}
+
+	scrollbar-color: $blackAlpha transparent;
+	scrollbar-width: thin;
+}
+
+@mixin globalScroll {
+	&::-webkit-scrollbar {
+		width: 13px;
+		background: $whiteAlpha;
+		box-shadow: inset rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+			rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $redAlpha;
+	}
+}
+
+//Percent
+@function percent($px, $from) {
+	$result: math.div($px, $from) * 100%;
+	@return $result;
+}
+
+//REM
+@function rem($px) {
+	$result: math.div($px, 16) + rem;
+	@return $result;
+}
+
+//EM
+@function em($px, $current: 16) {
+	$result: math.div($px, $current) + em;
+	@return $result;
+}
+
+//Адаптивное свойство
+
+//Currency
+@mixin currency($sym) {
+	&::after {
+		content: "#{$sym}";
+	}
+}
+
+// Grids
+@mixin gridCards($type: fit, $min: 280px, $max: 1fr, $gap: 30px) {
+	display: grid;
+	gap: $gap;
+	grid-template-columns: repeat(auto-#{$type}, minmax($min, $max));
+}
+
+// Адаптивное свойство (clamp)
+@mixin adaptiveValue(
+	$property,
+	$startSize,
+	$minSize,
+	$widthFrom: $containerWidth,
+	$widthTo: $minWidth,
+	$keepSize: 0
+) {
+	@if ($startSize==0) {
+		$startSize: 0.000001;
+	}
+
+	@if ($minSize==0) {
+		$minSize: 0.000001;
+	}
+
+	// Для calc();
+	$addSize: math.div($startSize - $minSize, 16);
+
+	@if ($widthFrom ==$containerWidth and $maxWidthContainer ==0) {
+		$widthFrom: $maxWidth;
+	}
+
+	// Брейк-поинты в EM
+	$widthFromMedia: em($widthFrom);
+	$widthToMedia: em($widthTo);
+
+	// Формула плавающего значения
+	// Источник: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+	$slope: math.div(($startSize - $minSize), ($widthFrom - $widthTo));
+	$yIntersection: -$widthTo * $slope + $minSize;
+
+	@if ($yIntersection==0) {
+		$yIntersection: 0.000001;
+	}
+
+	$flyValue: #{rem($yIntersection)}" + " #{$slope * 100}vw;
+
+	// Получение значения свойства
+	$propertyValue: #{"clamp(" rem($minSize) "," $flyValue "," rem($startSize) ")"};
+
+	// Если отрицательные значения
+	@if ($minSize > $startSize) {
+		$propertyValue: #{"clamp("
+			rem($startSize)
+			","
+			$flyValue
+			","
+			rem($minSize)
+			")"};
+	}
+
+	// Если поддерживается clamp();
+	@supports (#{$property}: $propertyValue) {
+		#{$property}: $propertyValue;
+	}
+
+	// Если не поддерживается clamp();
+	@supports not (#{$property}: $propertyValue) {
+		#{$property}: calc(
+			#{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{math.div(
+					$widthFrom,
+					16
+				) - math.div($widthTo, 16)}
+		);
+	}
+
+	// Устанавливаем значения по умолчанию
+	@if $widthFrom
+		!=$containerWidth and
+		$widthFrom
+		!=$maxWidth and
+		$keepSize
+		!=1 and
+		$keepSize
+		!=2
+	{
+		@media (min-width: $widthFromMedia) {
+			#{$property}: inherit;
+		}
+	}
+
+	@if $widthTo !=$minWidth and $keepSize !=1 and $keepSize !=3 {
+		@media (max-width: $widthToMedia) {
+			#{$property}: inherit;
+		}
+	}
+}

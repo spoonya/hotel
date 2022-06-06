@@ -1,0 +1,183 @@
+@import "normalize.css";
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+a {
+	display: inline-block;
+
+	line-height: normal;
+	text-decoration: none;
+
+	cursor: pointer;
+
+	&:focus {
+		outline: 0;
+	}
+
+	&:focus-visible {
+		@include outline;
+	}
+}
+
+img {
+	display: block;
+
+	width: 100%;
+	height: auto;
+}
+
+ul,
+ol,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+select {
+	appearance: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+
+	&:focus {
+		outline: 0;
+	}
+
+	&:focus-within {
+		border-color: $redAlpha;
+	}
+}
+
+input,
+textarea {
+	font: inherit;
+
+	color: $blackAlpha;
+
+	border: none;
+	background: none;
+	outline: 0;
+}
+
+input[type="button"] {
+	padding: 0;
+
+	cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: $blackAlpha;
+	opacity: 1;
+}
+
+button {
+	display: inline-block;
+
+	font: inherit;
+	color: inherit;
+
+	padding: 0;
+	margin: 0;
+
+	user-select: none;
+
+	cursor: pointer;
+
+	border: none;
+	background: none;
+
+	&:focus {
+		outline: 0;
+	}
+
+	&:focus-visible {
+		@include outline;
+	}
+}
+
+details {
+	summary {
+		list-style: none;
+		display: block;
+
+		cursor: pointer;
+
+		user-select: none;
+
+		&.active {
+			display: flex;
+		}
+
+		&:focus {
+			outline: 0;
+		}
+
+		&:focus-visible {
+			@include outline;
+		}
+
+		&::-webkit-details-marker {
+			display: none;
+		}
+	}
+}
+
+html {
+	// @include globalScroll;
+
+	scroll-behavior: smooth;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: $fontPrimary;
+	font-size: $fontSize;
+
+	margin: 0;
+
+	color: $whiteAlpha;
+	background-color: $whiteAlpha;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	max-width: rem($maxWidthContainer);
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 rem($containerPadding);
+}
+
+.scroll-hidden {
+	overflow: hidden;
+}

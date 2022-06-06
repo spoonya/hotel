@@ -1,0 +1,44 @@
+.form-order__body {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: rem(30);
+	align-items: flex-end;
+
+	padding: rem(28) rem(98) rem(30);
+
+	background-color: $blackAlpha;
+}
+
+.form-order__txt {
+	display: block;
+	margin-bottom: 5px;
+
+	text-align: center;
+	font-family: $fontSecondary;
+}
+
+.form-order__title {
+	padding: rem(25) rem(45) 0;
+	margin: 0 auto;
+	font-family: $fontSecondary;
+
+	max-width: fit-content;
+
+	font-size: rem(26);
+
+	background-color: $blackAlpha;
+}
+
+.form-order__label {
+	max-width: rem(165);
+	width: 100%;
+}
+
+.form-order__input {
+	padding: rem(15);
+
+	max-height: rem(45);
+	width: 100%;
+
+	background-color: $whiteAlpha;
+}
