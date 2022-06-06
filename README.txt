@@ -1,1 +1,1 @@
-# gulp-starter
+# Hotel Druzhba

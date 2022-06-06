@@ -49,6 +49,12 @@
 .footer__address a {
 	color: $blackAlpha;
 	font-size: rem(24);
+
+	transition: color 0.1s linear;
+
+	&:hover {
+		color: $redAlpha;
+	}
 }
 
 .footer__contacts,
