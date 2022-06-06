@@ -82,17 +82,21 @@
 
 .form-order__input {
 	padding: rem(15);
+	max-height: 45px;
 
-	max-height: rem(45);
 	width: 100%;
 
 	background-color: $whiteAlpha;
 }
 
 .form-order__submit {
-	max-width: fit-content;
+	font-size: 16px;
 
-	margin: 0 auto;
+	@include media-tablet-lg {
+		max-width: fit-content;
+
+		margin: 0 auto;
+	}
 
 	@include media-phone-lg {
 		max-width: unset;

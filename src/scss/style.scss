@@ -16,7 +16,7 @@
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
 $fontPrimary: "Roboto", sans-serif;
 $fontSecondary: "Montserrat", sans-serif;
-$fontSize: rem(16);
+$fontSize: em(16);
 
 // Breakpoints
 $media-xxl: em(1399.98);
@@ -76,4 +76,5 @@ body {
 @import "footer";
 
 @import "index/intro";
+@import "index/about";
 @import "index/form-order";
