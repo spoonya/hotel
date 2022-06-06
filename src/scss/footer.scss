@@ -1,5 +1,9 @@
 .footer {
 	padding: rem(55) 0;
+
+	@include media-tablet-lg {
+		padding: 30px 0;
+	}
 }
 
 .footer__title {
@@ -7,40 +11,100 @@
 	font-family: $fontSecondary;
 	font-size: rem(30);
 	margin-bottom: rem(25);
+
+	@include media-tablet-lg {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
 }
 
 .footer__top,
 .footer__bot {
 	display: flex;
+
+	@include media-tablet-sm {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+		grid-gap: 20px;
+	}
 }
 
 .footer__top {
 	margin-bottom: rem(45);
+
+	@include media-tablet-sm {
+		margin-bottom: 25px;
+	}
 }
 
 .footer__social,
 .footer__pay {
 	margin-right: rem(115);
+
+	@include media-laptop {
+		margin-right: 40px;
+	}
+
+	@include media-tablet-sm {
+		margin-right: 0;
+	}
+}
+
+.footer__social {
+	@include media-tablet-sm {
+		text-align: center;
+		max-width: fit-content;
+		margin: 0 auto;
+	}
 }
 
 .footer__menu {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	grid-gap: rem(20);
 
-	margin-right: rem(60);
+	margin-right: 20px;
+
+	@include media-tablet-lg {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 10px;
+		margin-right: 0;
+	}
 }
 
 .footer__address {
 	text-align: right;
+
+	@include media-tablet-sm {
+		text-align: center;
+	}
 }
 
 .footer__pay {
-	max-width: rem(374);
+	min-width: 374px;
+	max-width: 374px;
+
+	@include media-tablet-lg {
+		min-width: 249px;
+		max-width: 249px;
+	}
+
+	@include media-tablet-sm {
+		min-width: unset;
+		margin: 0 auto;
+	}
 }
 
 .footer__contacts-list {
 	li:not(:last-child) {
 		margin-bottom: 15px;
+	}
+
+	@include media-tablet-sm {
+		li:not(:last-child) {
+			margin-bottom: 8px;
+		}
 	}
 }
 
@@ -55,6 +119,14 @@
 	&:hover {
 		color: $redAlpha;
 	}
+
+	@include media-laptop {
+		font-size: 22px;
+	}
+
+	@include media-tablet-lg {
+		font-size: 18px;
+	}
 }
 
 .footer__contacts,
@@ -64,6 +136,11 @@
 
 .footer__contacts {
 	margin-right: 20px;
+
+	@include media-tablet-sm {
+		text-align: center;
+		margin-right: 0;
+	}
 }
 
 .footer__menu-list {
@@ -73,6 +150,16 @@
 
 	a {
 		border-bottom: 1px solid;
+	}
+
+	@include media-tablet-lg {
+		li:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	@include media-tablet-sm {
+		text-align: center;
 	}
 }
 
@@ -85,7 +172,14 @@
 	justify-self: flex-end;
 
 	padding: 5px 20px;
-	max-width: rem(140);
 
 	background-color: $blackAlpha;
+
+	@include media-tablet-lg {
+		align-self: flex-start;
+	}
+
+	@include media-tablet-sm {
+		justify-self: center;
+	}
 }

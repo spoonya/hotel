@@ -27,6 +27,11 @@
 
 .social-list {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
 	grid-gap: rem(20);
+
+	@include media-tablet-sm {
+		grid-template-columns: repeat(auto-fit, minmax(34px, 1fr));
+		grid-gap: 5px;
+	}
 }
