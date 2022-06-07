@@ -19,12 +19,12 @@ $fontSecondary: "Montserrat", sans-serif;
 $fontSize: em(16);
 
 // Breakpoints
-$media-xxl: em(1399.98);
-$media-xl: em(1199.98);
-$media-lg: em(991.98);
-$media-md: em(767.98);
-$media-sm: em(575.98);
-$media-xs: em(479.98);
+$media-xxl: 1399.98px;
+$media-xl: 1199.98px;
+$media-lg: 991.98px;
+$media-md: 767.98px;
+$media-sm: 575.98px;
+$media-xs: 479.98px;
 
 // Основные цвета
 $blackAlpha: #323642;
@@ -92,11 +92,11 @@ body {
 }
 
 .container {
-	max-width: rem($maxWidthContainer);
+	max-width: $maxWidthContainer + px;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	padding: 0 rem($containerPadding);
+	padding: 0 $containerPadding + px;
 }
 
 .scroll-hidden {
@@ -116,4 +116,5 @@ body {
 
 @import "index/intro";
 @import "index/about";
+@import "index/edges";
 @import "index/form-order";

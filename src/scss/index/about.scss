@@ -1,5 +1,9 @@
 .about__title {
 	margin-bottom: rem(30);
+
+	@include media-tablet-lg {
+		margin-bottom: 20px;
+	}
 }
 
 .about__inner {

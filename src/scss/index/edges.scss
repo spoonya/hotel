@@ -1,0 +1,59 @@
+.edges {
+}
+
+.edges__top {
+	margin-bottom: 30px;
+}
+
+.edges__title {
+	display: flex;
+	justify-content: space-between;
+
+	&::after {
+		content: "";
+
+		display: inline-block;
+
+		margin-top: 10px;
+
+		width: 50%;
+		height: 1px;
+
+		background-color: $blackAlpha;
+	}
+}
+
+.edges__inner {
+	position: relative;
+	padding-top: 300px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100%;
+
+	&::after,
+	&::before {
+		content: "";
+
+		z-index: -1;
+
+		position: absolute;
+
+		background: $blackAlpha;
+	}
+
+	&::after {
+		height: 100%;
+		width: 100vw;
+
+		top: 0;
+		left: 99%;
+	}
+
+	&::before {
+		height: 100%;
+		width: 100vw;
+
+		top: 110px;
+		right: 99%;
+	}
+}
