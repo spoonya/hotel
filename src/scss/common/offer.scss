@@ -1,0 +1,60 @@
+.offer {
+	background-color: $blackAlpha;
+	padding: 40px 0;
+}
+
+.offer__descrip {
+	max-width: 631px;
+	width: 100%;
+	margin-bottom: 50px;
+
+	@include media-tablet-lg {
+		margin-bottom: 30px;
+	}
+}
+
+.offer__title {
+	margin-bottom: 25px;
+
+	@include media-tablet-lg {
+		margin-bottom: 15px;
+	}
+}
+
+.offer__subtitle {
+	font-family: $fontSecondary;
+	font-size: 30px;
+	margin-bottom: 25px;
+
+	@include media-tablet-lg {
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+}
+
+.offer__text {
+	font-size: 18px;
+}
+
+.offer-slide__img {
+	min-height: 345px;
+	max-height: 345px;
+
+	object-fit: cover;
+}
+
+.offer__controls {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 30px;
+
+	.slider-pagination {
+		position: static;
+		width: unset !important;
+
+		margin: 0 15px;
+	}
+}
