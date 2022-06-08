@@ -17,12 +17,16 @@
 }
 
 .update__item {
+	display: flex;
+	flex-direction: column;
+
 	background-color: $whiteAlpha;
 
 	&--lg {
 		display: flex;
 		justify-content: space-between;
 		align-items: stretch;
+		flex-direction: row;
 
 		grid-area: auto/1/auto/3;
 
@@ -36,6 +40,7 @@
 
 		.update__item-content {
 			padding: 105px;
+			align-items: center;
 		}
 
 		.update__item-img {
@@ -75,6 +80,9 @@
 }
 
 .update__item-content {
+	display: flex;
+	flex-grow: 1;
+
 	padding: 45px 105px;
 }
 
@@ -103,7 +111,6 @@
 	align-items: flex-start;
 
 	max-width: 364px;
-	height: 100%;
 	width: 100%;
 }
 
@@ -125,6 +132,7 @@
 
 .update__item-title {
 	margin-bottom: 25px;
+	flex-grow: 1;
 
 	@include media-laptop {
 		margin-bottom: 15px;
