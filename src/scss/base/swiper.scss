@@ -1,4 +1,5 @@
 .swiper {
+	position: relative;
 	overflow: hidden;
 }
 .swiper-wrapper {
@@ -29,6 +30,7 @@
 		transform: translate3d(0px, 0, 0);
 	}
 }
-.swiper-button-lock {
+.swiper-button-lock,
+.swiper-pagination-lock {
 	display: none !important;
 }

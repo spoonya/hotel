@@ -25,8 +25,6 @@ import "../../scss/base/swiper.scss";
 
 // Инициализация слайдеров
 function initSliders() {
-	// Перечень слайдеров
-	// Проверяем, есть ли слайдер на странице
 	if (document.querySelector("#swiper-offer")) {
 		// Указываем скласс нужного слайдера
 		// Создаем слайдер
@@ -35,7 +33,7 @@ function initSliders() {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Pagination, Navigation],
-			// observer: true,
+			observer: true,
 			observeParents: true,
 			slidesPerView: 3,
 			spaceBetween: 28,
@@ -89,6 +87,54 @@ function initSliders() {
 					slidesPerView: 3,
 				},
 			},
+			// События
+			on: {},
+		});
+	}
+
+	if (document.querySelector("#swiper-rooms")) {
+		new Swiper("#swiper-rooms", {
+			modules: [Pagination, Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 20,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			// loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			pagination: {
+				el: ".slider-pagination",
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: ".slider-button-prev",
+				nextEl: ".slider-button-next",
+			},
+
 			// События
 			on: {},
 		});

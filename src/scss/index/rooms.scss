@@ -1,0 +1,161 @@
+.rooms {
+}
+
+.rooms__title {
+	margin-bottom: 30px;
+}
+
+.rooms__slide {
+	position: relative;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	padding: 280px 64px 35px 97px;
+
+	&::after {
+		position: absolute;
+
+		content: "";
+
+		background-color: rgba(0, 0, 0, 0.3);
+
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	@include media-tablet-lg {
+		padding: 200px 64px 50px;
+	}
+
+	@include media-tablet-sm {
+		padding: 50px 64px;
+	}
+
+	@include media-phone-sm {
+		padding: 50px 20px;
+	}
+}
+
+.rooms__slide-inner {
+	position: relative;
+
+	z-index: 1;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	@include media-tablet-sm {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.rooms__slide-descrip {
+	max-width: 600px;
+	width: 100%;
+
+	margin-right: 20px;
+
+	@include media-tablet-sm {
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+}
+
+.rooms__slide-title {
+	font-family: $fontSecondary;
+	font-size: 30px;
+
+	margin-bottom: 20px;
+
+	@include media-tablet-sm {
+		font-size: 25px;
+	}
+}
+
+.rooms__slide-text {
+	font-size: 18px;
+
+	margin-bottom: 15px;
+
+	@include media-tablet-sm {
+		font-size: 16px;
+	}
+}
+
+.rooms__slide-group {
+	display: flex;
+
+	font-size: 20px;
+
+	margin-bottom: 25px;
+
+	a {
+		margin-right: 30px;
+		color: $whiteAlpha;
+		border-bottom: 1px solid;
+	}
+
+	@include media-tablet-sm {
+		font-size: 18px;
+	}
+
+	@include media-phone-lg {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+
+		p {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.rooms__button-prev,
+.rooms__button-next {
+	position: absolute;
+
+	top: 50%;
+
+	@include media-phone-sm {
+		top: 95%;
+	}
+}
+
+.rooms__button-prev {
+	left: 35px;
+	transform: translateY(-50%) scale(-1, -1);
+
+	@include media-tablet-lg {
+		left: 10px;
+	}
+
+	@include media-phone-sm {
+		left: 40%;
+	}
+}
+
+.rooms__button-next {
+	right: 35px;
+	transform: translateY(-50%);
+
+	@include media-tablet-lg {
+		right: 10px;
+	}
+
+	@include media-phone-sm {
+		right: 40%;
+	}
+}
+
+.rooms__slide-order {
+	margin-bottom: 25px;
+
+	@include media-tablet-sm {
+		margin-bottom: 0;
+	}
+}

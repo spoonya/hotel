@@ -116,21 +116,6 @@
 		left: 80%;
 	}
 
-	// &::before {
-	// 	position: relative;
-
-	// 	display: block;
-
-	// 	content: "";
-
-	// 	height: 15px;
-	// 	width: 15px;
-
-	// 	background-color: $blackAlpha;
-
-	// 	margin: 0 auto 10px;
-	// }
-
 	@include media-laptop {
 		&:nth-child(1) {
 			top: 61%;
