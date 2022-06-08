@@ -125,10 +125,18 @@
 
 .update__item-title {
 	margin-bottom: 25px;
+
+	@include media-tablet-lg {
+		margin-bottom: 15px;
+	}
 }
 
 .update__item-text {
 	margin-bottom: 30px;
+
+	@include media-tablet-lg {
+		margin-bottom: 20px;
+	}
 }
 
 .update__more {

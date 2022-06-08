@@ -18,12 +18,12 @@
 }
 
 .sections {
-	padding: 100px 0 50px;
+	padding: 100px 0 130px;
 
 	background-color: $blackAlpha;
 
 	@include media-laptop {
-		padding: 50px 0;
+		padding: 50px 0 130px;
 	}
 }
 
@@ -174,4 +174,8 @@
 
 .slider-button-prev {
 	transform: scale(-1, -1);
+}
+
+.map {
+	height: 320px;
 }
