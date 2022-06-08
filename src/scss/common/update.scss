@@ -1,0 +1,138 @@
+.update__title {
+	margin-bottom: 50px;
+}
+
+.update__list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+
+	@include media-tablet-sm {
+		grid-gap: 15px;
+	}
+
+	@include media-phone-lg {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.update__item {
+	background-color: $whiteAlpha;
+
+	&--lg {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+
+		grid-area: auto/1/auto/3;
+
+		@include media-tablet-sm {
+			flex-direction: column-reverse;
+		}
+
+		@include media-phone-lg {
+			grid-area: auto;
+		}
+
+		.update__item-content {
+			padding: 105px;
+		}
+
+		.update__item-img {
+			max-width: 570px;
+			max-height: unset;
+
+			@include media-laptop {
+				max-width: 400px;
+			}
+
+			@include media-tablet-lg {
+				max-width: 350px;
+			}
+
+			@include media-tablet-sm {
+				max-width: unset;
+				max-height: 300px;
+			}
+
+			@include media-phone-lg {
+				max-height: 200px;
+			}
+		}
+
+		.update__item-descrip {
+			@include media-laptop {
+				max-width: 700px;
+			}
+		}
+	}
+
+	@include media-laptop {
+		.update__item-content {
+			padding: 50px;
+		}
+	}
+
+	@include media-tablet-sm {
+		.update__item-content {
+			padding: 25px;
+		}
+	}
+}
+
+.update__item-content {
+	padding: 45px 105px;
+}
+
+.update__item-img {
+	max-height: 343px;
+	min-height: 343px;
+
+	object-fit: cover;
+
+	@include media-laptop {
+		max-height: 250px;
+		min-height: 250px;
+	}
+
+	@include media-phone-lg {
+		max-height: 200px;
+		min-height: 200px;
+	}
+}
+
+.update__item-descrip {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	max-width: 364px;
+	height: 100%;
+	width: 100%;
+}
+
+.update__item-link {
+	border-bottom: 1px solid;
+	font-size: 22px;
+	color: $blackAlpha;
+
+	margin-top: auto;
+
+	@include media-tablet-sm {
+		font-size: 18px;
+	}
+}
+
+.update__item-title {
+	margin-bottom: 25px;
+}
+
+.update__item-text {
+	margin-bottom: 30px;
+}
+
+.update__more {
+	display: block;
+	max-width: fit-content;
+	margin: 30px auto 0;
+}

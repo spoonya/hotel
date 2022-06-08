@@ -45,6 +45,19 @@
 	}
 }
 
+.title-secondary {
+	font-size: 30px;
+	font-family: $fontSecondary;
+
+	&--dark {
+		color: $blackAlpha;
+	}
+
+	@include media-tablet-lg {
+		font-size: 22px;
+	}
+}
+
 .button {
 	background-color: $blackAlpha;
 	color: $whiteAlpha;
@@ -69,6 +82,18 @@
 		&:hover {
 			background-color: darken($whiteAlpha, 7);
 		}
+	}
+}
+
+.text {
+	font-size: 18px;
+
+	&--dark {
+		color: $blackAlpha;
+	}
+
+	@include media-tablet-sm {
+		font-size: 16px;
 	}
 }
 
