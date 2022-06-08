@@ -90,6 +90,12 @@
 		margin-right: 30px;
 		color: $whiteAlpha;
 		border-bottom: 1px solid;
+
+		transition: color 0.1s linear;
+
+		&:hover {
+			color: darken($whiteAlpha, 10);
+		}
 	}
 
 	@include media-tablet-sm {

@@ -118,6 +118,12 @@
 
 	margin-top: auto;
 
+	transition: color 0.1s linear;
+
+	&:hover {
+		color: lighten($blackAlpha, 15);
+	}
+
 	@include media-tablet-sm {
 		font-size: 18px;
 	}
