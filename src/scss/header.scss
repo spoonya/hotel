@@ -138,6 +138,8 @@
 	opacity: 0;
 	pointer-events: none;
 
+	transition: opacity 0.1s linear;
+
 	&.active {
 		pointer-events: all;
 		opacity: 1;
@@ -164,6 +166,10 @@
 		&:not(:last-child) {
 			margin-bottom: 5px;
 		}
+	}
+
+	a {
+		color: $blackAlpha;
 	}
 }
 
