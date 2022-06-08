@@ -9,13 +9,13 @@ mapContainer.addEventListener("mouseover", loadMap, options);
 mapContainer.addEventListener("touchstart", loadMap, options);
 mapContainer.addEventListener("touchmove", loadMap, options);
 
-let map_loaded = false;
+let mapLoaded = false;
 function loadMap() {
-	if (!map_loaded) {
-		let map_block = document.getElementById("ymap-lazy");
-		map_loaded = true;
-		map_block.setAttribute("src", map_block.getAttribute("data-src"));
-		map_block.removeAttribute("data-src");
+	if (!mapLoaded) {
+		let mapBlock = document.getElementById("ymap-lazy");
+		mapLoaded = true;
+		mapBlock.setAttribute("src", mapBlock.getAttribute("data-src"));
+		mapBlock.removeAttribute("data-src");
 	}
 }
 
