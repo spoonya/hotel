@@ -78,14 +78,10 @@
 	}
 
 	@include media-tablet-lg {
-		&.webp,
-		&.no-webp,
-		& {
-			background-image: none;
+		background-image: none !important;
 
-			margin: 0;
-			padding: 0;
-		}
+		margin: 0;
+		padding: 0;
 	}
 }
 
