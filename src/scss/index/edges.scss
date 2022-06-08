@@ -1,4 +1,7 @@
 .edges {
+	@include media-tablet-lg {
+		margin-bottom: 40px;
+	}
 }
 
 .edges__top {
@@ -21,11 +24,19 @@
 
 		background-color: $blackAlpha;
 	}
+
+	@include media-tablet-lg {
+		&::after {
+			display: none;
+		}
+	}
 }
 
 .edges__inner {
 	position: relative;
-	padding-top: 300px;
+	padding-top: 341px;
+
+	background-image: url("../img/edges-bg.png");
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: 100%;
@@ -45,7 +56,7 @@
 		height: 100%;
 		width: 100vw;
 
-		top: 0;
+		top: 25px;
 		left: 99%;
 	}
 
@@ -53,7 +64,116 @@
 		height: 100%;
 		width: 100vw;
 
-		top: 110px;
+		top: 151px;
 		right: 99%;
+	}
+
+	@include media-laptop {
+		margin: 0 -15px -1px;
+
+		&::after,
+		&::before {
+			display: none;
+		}
+	}
+
+	@include media-tablet-lg {
+		background: $whiteAlpha;
+
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.edges__items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 15px;
+
+	@include media-phone-lg {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.edges__item {
+	position: absolute;
+
+	max-width: 300px;
+	width: 100%;
+
+	&:nth-child(1) {
+		top: 61%;
+		left: 19%;
+	}
+
+	&:nth-child(2) {
+		top: 45%;
+		left: 46%;
+	}
+
+	&:nth-child(3) {
+		top: 30%;
+		left: 80%;
+	}
+
+	// &::before {
+	// 	position: relative;
+
+	// 	display: block;
+
+	// 	content: "";
+
+	// 	height: 15px;
+	// 	width: 15px;
+
+	// 	background-color: $blackAlpha;
+
+	// 	margin: 0 auto 10px;
+	// }
+
+	@include media-laptop {
+		&:nth-child(1) {
+			top: 61%;
+		}
+
+		&:nth-child(2) {
+			top: 47%;
+		}
+
+		&:nth-child(3) {
+			top: 32%;
+		}
+	}
+
+	@include media-tablet-lg {
+		position: static;
+
+		// max-width: unset;
+		margin: 0 auto;
+		padding: 15px;
+
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+			rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+		text-align: center;
+		color: $blackAlpha;
+	}
+}
+
+.edges__item-title {
+	font-size: 30px;
+	font-family: $fontSecondary;
+	margin-bottom: 15px;
+
+	@include media-laptop {
+		font-size: 22px;
+	}
+}
+
+.edges__item-text {
+	font-size: 18px;
+
+	@include media-laptop {
+		font-size: 16px;
 	}
 }

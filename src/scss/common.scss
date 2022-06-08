@@ -10,15 +10,15 @@
 }
 
 .section {
-	margin-bottom: rem(55);
+	margin-bottom: 55px;
 
 	@include media-tablet-lg {
-		margin-bottom: 30px;
+		margin-bottom: 35px;
 	}
 }
 
 .title {
-	font-size: rem(48);
+	font-size: 48px;
 	font-family: $fontSecondary;
 	text-transform: uppercase;
 
@@ -45,7 +45,7 @@
 	transition: background-color 0.1s linear;
 
 	&:hover {
-		background-color: darken($blackAlpha, 7);
+		background-color: lighten($blackAlpha, 7);
 	}
 
 	&--secondary {
@@ -66,6 +66,14 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
 	grid-gap: rem(20);
+
+	li {
+		transition: filter 0.1s linear;
+
+		&:hover {
+			filter: brightness(120%);
+		}
+	}
 
 	@include media-tablet-sm {
 		grid-template-columns: repeat(auto-fit, minmax(34px, 1fr));

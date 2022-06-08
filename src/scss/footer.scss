@@ -175,6 +175,12 @@
 
 	background-color: $blackAlpha;
 
+	transition: background-color 0.1s linear;
+
+	&:hover {
+		background-color: lighten($blackAlpha, 5);
+	}
+
 	@include media-tablet-lg {
 		align-self: flex-start;
 	}

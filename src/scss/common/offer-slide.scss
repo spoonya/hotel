@@ -50,4 +50,21 @@
 	background-image: url("../img/plus.png");
 	background-position: center;
 	background-repeat: no-repeat;
+
+	transition: background-color 0.1s linear;
+
+	&:hover {
+		background-color: lighten($blackAlpha, 5);
+	}
+
+	@include media-laptop {
+		height: 50px;
+		width: 140px;
+	}
+
+	@include media-tablet-sm {
+		width: 120px;
+		height: 40px;
+		background-size: 25px;
+	}
 }

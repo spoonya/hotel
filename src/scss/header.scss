@@ -124,6 +124,7 @@
 .header__lang-list {
 	background: $whiteAlpha;
 	position: absolute;
+	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -141,8 +142,35 @@
 		pointer-events: all;
 		opacity: 1;
 	}
+
+	li {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+
+		&::before {
+			background: lighten($blackAlpha, 10);
+			opacity: 0;
+			content: "";
+			width: 10px;
+			height: 10px;
+		}
+
+		&.active::before {
+			opacity: 1;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
 }
 
 .header__button {
 	font-size: 16px;
+}
+
+.header__lang {
+	position: relative;
 }
