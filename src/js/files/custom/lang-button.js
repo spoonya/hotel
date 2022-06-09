@@ -10,7 +10,7 @@ export function controlLangButton() {
 	});
 
 	window.addEventListener("click", (e) => {
-		const path = e.path || (e.composedPath && e.composedPath());
+		const path = e.composedPath && e.composedPath();
 
 		if (path.includes(langButton)) return;
 

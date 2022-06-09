@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	align-items: flex-end;
 
-	padding: rem(28) rem(98) rem(30);
+	padding: 28px 98px 30px;
 
 	background-color: $blackAlpha;
 
@@ -25,15 +25,14 @@
 }
 
 .form-order__title {
-	padding: rem(25) rem(45) 0;
+	padding: 25px 45px 0;
 	margin: 0 auto;
 
 	font-family: $fontSecondary;
+	font-size: 26px;
 	text-align: center;
 
 	max-width: fit-content;
-
-	font-size: rem(26);
 
 	background-color: $blackAlpha;
 
@@ -50,7 +49,7 @@
 
 .form-order__label,
 .form-order__submit {
-	max-width: rem(165);
+	max-width: 165px;
 	width: 100%;
 }
 
@@ -81,7 +80,7 @@
 }
 
 .form-order__input {
-	padding: rem(15);
+	padding: 15px;
 	max-height: 45px;
 
 	width: 100%;

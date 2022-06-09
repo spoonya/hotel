@@ -14,4 +14,6 @@ export const CLASSES = {
 
 export const DOM = {
 	body: document.querySelector("body"),
+	header: document.querySelector("#header"),
+	page: document.querySelector("#page"),
 };

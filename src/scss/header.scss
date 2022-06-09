@@ -19,7 +19,7 @@
 }
 
 .header__logo {
-	margin-right: rem(35);
+	margin-right: 35px;
 }
 
 .header__group {
@@ -57,7 +57,7 @@
 }
 
 .header__menu {
-	margin-right: rem(60);
+	margin-right: 60px;
 
 	@include media-laptop {
 		text-align: center;
@@ -70,7 +70,7 @@
 	display: flex;
 
 	li:not(:last-child) {
-		margin-right: rem(20);
+		margin-right: 20px;
 	}
 
 	a {

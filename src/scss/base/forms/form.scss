@@ -1,0 +1,20 @@
+.form {
+	width: 100%;
+}
+
+.form__submit {
+	min-width: 200px;
+}
+
+.form__control {
+	width: 100%;
+	margin-bottom: 17px;
+
+	@include media-tablet-lg {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@import "input";

@@ -1,0 +1,70 @@
+.modal-offer__inner {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+
+	margin-bottom: 30px;
+}
+
+.modal-offer__title {
+	margin-bottom: 25px;
+
+	@include media-tablet-lg {
+		margin-bottom: 15px;
+	}
+}
+
+.modal-offer__titles {
+	margin-bottom: 20px;
+}
+
+.modal-offer__img {
+	max-width: 555px;
+	width: 100%;
+	margin-right: 30px;
+	object-fit: cover;
+
+	@include media-laptop {
+		max-width: 370px;
+		margin-right: 20px;
+	}
+
+	@include media-tablet-lg {
+		max-width: 280px;
+	}
+
+	@include media-tablet-sm {
+		display: none;
+	}
+}
+
+.modal-offer__form-title {
+	font-size: 24px;
+
+	margin-bottom: 25px;
+
+	@include media-tablet-lg {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+}
+
+.modal-offer__form-wrapper {
+	width: 100%;
+}
+
+.modal-offer__message {
+	min-height: 282px;
+}
+
+.modal-offer__text {
+	p:not(:last-child) {
+		margin-bottom: 25px;
+	}
+}
+
+.modal-offer__phone {
+	@include media-tablet-lg {
+		margin-bottom: 15px;
+	}
+}

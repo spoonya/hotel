@@ -104,13 +104,16 @@ body {
 }
 
 @import "base";
+@import "base/forms/form";
 
 @import "common";
-
 @import "common/burger-button";
 @import "common/offer";
 @import "common/offer-slide";
 @import "common/update";
+@import "common/modal";
+@import "common/modal-book";
+@import "common/modal-offer";
 
 @import "header";
 @import "footer";
@@ -121,3 +124,4 @@ body {
 @import "index/rooms";
 @import "index/form-order";
 @import "index/location";
+@import "index/modal-about";

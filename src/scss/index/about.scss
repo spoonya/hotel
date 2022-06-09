@@ -1,5 +1,5 @@
 .about__title {
-	margin-bottom: rem(30);
+	margin-bottom: 30px;
 
 	@include media-tablet-lg {
 		margin-bottom: 20px;
@@ -19,13 +19,13 @@
 
 .about__text {
 	color: $blackAlpha;
-	font-size: rem(24);
-	margin-bottom: rem(35);
+	font-size: 24px;
+	margin-bottom: 24px;
 }
 
 .about__text,
 .about__button {
-	font-size: rem(24);
+	font-size: 24px;
 
 	@include media-laptop {
 		font-size: 18px;
@@ -36,7 +36,7 @@
 	margin-bottom: 20px;
 
 	@include media-custom-mf($media-lg) {
-		max-width: rem(647);
+		max-width: 647px;
 		width: 100%;
 		margin-right: 20px;
 		margin-bottom: 0;
@@ -44,7 +44,7 @@
 }
 
 .about__img {
-	max-width: rem(455);
+	max-width: 455px;
 	width: 100%;
 	margin: 0 auto;
 

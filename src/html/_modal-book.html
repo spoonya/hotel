@@ -1,0 +1,52 @@
+<div class="modal modal-book" id="modal-book">
+  <div class="modal__content">
+    <div class="container">
+      <div class="modal__wrapper">
+        <button class="modal__close" aria-label="закрыть модальное окно" type="button" data-modal-close></button>
+        <div class="modal-book__inner">
+          <div class="modal-book__top">
+            <h2 class="modal-book__title title-secondary title-secondary--dark">Забронировать</h2>
+            <div class="modal__phone">
+              <span>Телефон: </span>
+              <a href="tel:+78137825744" class="modal-book__phone">+7 (81378) 2-57-44</a>
+            </div>
+          </div>
+          <form class="form" name="book">
+            <div class="form__control">
+              <input type="text" class="input" placeholder="Как к Вам обращаться?" name="book-name">
+            </div>
+            <div class="form__control">
+              <input type="tel" class="input" placeholder="Ваш номер телефона для связи" name="book-phone">
+            </div>
+            <div class="form__control">
+              <textarea class="modal-book__message input" placeholder="Дополнительные вопросы или пожелания" name="order-message"></textarea>
+            </div>
+            <button class="form__submit button" type="submit">Отправить</button>
+          </form>
+          <div class="modal__bot">
+            <div class="modal-book__text text text--dark">
+              <p>Оставьте свои данные, и мы перезвоним с ответом в ближайшее время</p>
+            </div>
+            <ul class="social-list social-list--fit-content">
+              <li>
+                <a href="#" target="_blank" aria-label="telegram">
+                  <img src="img/telegram.jpg" width="34" height="34" alt="" loading="lazy">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" aria-label="telegram">
+                  <img src="img/vk.jpg" width="34" height="34" alt="" loading="lazy">
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" aria-label="telegram">
+                  <img src="img/youtube.jpg" width="34" height="34" alt="" loading="lazy">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

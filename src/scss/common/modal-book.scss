@@ -1,0 +1,44 @@
+.modal-book__inner {
+	padding: 80px 0;
+
+	@include media-tablet-lg {
+		padding: 50px 0;
+	}
+}
+
+.modal-book__title {
+	@include media-phone-sm {
+		margin-bottom: 10px;
+	}
+}
+
+.modal-book__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 30px;
+
+	@include media-tablet-lg {
+		margin-bottom: 20px;
+	}
+
+	@include media-phone-sm {
+		flex-direction: column;
+		align-items: unset;
+	}
+}
+
+.modal-book__message {
+	min-height: 400px;
+
+	@include media-tablet-lg {
+		min-height: 250px;
+	}
+}
+
+.modal-book__text {
+	@include media-tablet-lg {
+		margin-bottom: 15px;
+	}
+}
