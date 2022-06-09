@@ -45,6 +45,7 @@
 
 		.update__item-img {
 			max-width: 570px;
+			flex: 0 0 570px;
 			max-height: unset;
 
 			@include media-laptop {
@@ -89,10 +90,13 @@
 .update__item-img {
 	max-height: 343px;
 	min-height: 343px;
+	flex: 0 0 343px;
 
-	height: 100%;
+	img {
+		height: 100%;
 
-	object-fit: cover;
+		object-fit: cover;
+	}
 
 	@include media-laptop {
 		max-height: 250px;

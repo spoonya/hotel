@@ -20,9 +20,14 @@
 
 .modal-offer__img {
 	max-width: 555px;
+	flex: 0 0 555px;
 	width: 100%;
 	margin-right: 30px;
-	object-fit: cover;
+
+	img {
+		object-fit: cover;
+		height: 100%;
+	}
 
 	@include media-laptop {
 		max-width: 370px;

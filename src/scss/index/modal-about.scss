@@ -7,8 +7,12 @@
 .modal-about__img {
 	max-width: 459px;
 	width: 100%;
+	flex: 0 0 459px;
 
-	object-fit: cover;
+	img {
+		object-fit: cover;
+		height: 100%;
+	}
 
 	@include media-tablet-lg {
 		max-width: 300px;
