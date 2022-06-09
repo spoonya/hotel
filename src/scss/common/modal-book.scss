@@ -4,6 +4,10 @@
 	@include media-tablet-lg {
 		padding: 50px 0;
 	}
+
+	@include media-tablet-sm {
+		padding: 20px 0;
+	}
 }
 
 .modal-book__title {
