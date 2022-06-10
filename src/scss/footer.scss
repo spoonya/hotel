@@ -1,6 +1,8 @@
 .footer {
 	padding: 55px 0;
 
+	background-color: $whiteAlpha;
+
 	@include media-tablet-lg {
 		padding: 30px 0;
 	}

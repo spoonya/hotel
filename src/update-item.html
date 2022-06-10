@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.html',{
+"title":"Новости"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html',{})
+    <main id="page" class="page page--light">
+      <section class="p-update section">
+        <div class="container">
+          <h2 class="title title--dark">Новости</h2>
+          <h3 class="title-secondary title-secondary--dark">Тема новости</h3>
+          <div class="p-update__inner">
+            <div class="p-update__left">
+              <div class="p-update__img">
+                <img src="img/intro.jpg" width="555" height="699" alt="">
+              </div>
+              <div class="p-update__links">
+                <a href="#" class="p-update__links-item button">Предыдущая статья</a>
+                <a href="#" class="p-update__links-item button">Следующая статья</a>
+              </div>
+            </div>
+            <div class="p-update__right">
+              <div class="p-update__text text text--dark">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempora voluptatum optio expedita unde in facilis cupiditate placeat ea dolorum ullam itaque praesentium, nemo non vero ut officia perspiciatis? Exercitationem eligendi totam, voluptatum fugit dicta necessitatibus tenetur quod cupiditate unde quibusdam reprehenderit quas ea possimus non minus fugiat officiis incidunt voluptate, laborum commodi cumque ut qui, obcaecati similique. Dignissimos, dolore!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ducimus in, tempora magni vel neque excepturi reiciendis dicta odit omnis, autem iusto perspiciatis iure velit hic aliquam aliquid sint rem praesentium inventore aut harum! Consequatur itaque sequi perferendis nobis totam numquam aperiam non corrupti dicta voluptate vitae rem molestias repellat laborum error illum, debitis impedit quaerat tenetur. Incidunt vero, nobis harum tempore ab voluptatem neque molestias, minima adipisci iste tempora dicta. Nihil libero non, facere dolore odit veniam rem. Doloremque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum iusto eveniet deserunt. Rem sint similique, non, odit modi quae doloremque temporibus facere rerum recusandae pariatur facilis dolorum necessitatibus quasi eaque illum nam adipisci, accusantium sequi eveniet sit. Eius ipsa, cupiditate asperiores, cumque possimus quibusdam sit, harum iure aut quia ullam.</p>
+              </div>
+              <ul class="social-list social-list--fit-content">
+                <li>
+                  <a href="#" target="_blank" aria-label="telegram">
+                    <img src="img/telegram.jpg" width="34" height="34" alt="" loading="lazy">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" aria-label="telegram">
+                    <img src="img/vk.jpg" width="34" height="34" alt="" loading="lazy">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" aria-label="telegram">
+                    <img src="img/youtube.jpg" width="34" height="34" alt="" loading="lazy">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Subscribe-->
+      <section class="subscribe section">
+        <div class="container">
+          <h2 class="subscribe__title title-secondary title-secondary--dark">Будьте в курсе последних новостей</h2>
+          <form class="subscribe__form form" name="subscribe-news">
+            <div class="subscribe__form-control form__control">
+              <input type="email" class="input" placeholder="Ваша электронная почта" required>
+            </div>
+            <button class="form__submit button" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.html', {})
+  </div>
+  <!--Modal-offer-tarif-->
+  @@include('html/_modal-offer-tariff.html',{})
+  <!--Modal-book-->
+  @@include('html/_modal-book.html',{})
+  @@include('html/_js.html',{})
+</body>
+
+</html>

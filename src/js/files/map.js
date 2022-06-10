@@ -4,10 +4,12 @@ let options = {
 	passive: true,
 	capture: true,
 };
-mapContainer.addEventListener("click", loadMap, options);
-mapContainer.addEventListener("mouseover", loadMap, options);
-mapContainer.addEventListener("touchstart", loadMap, options);
-mapContainer.addEventListener("touchmove", loadMap, options);
+if (mapContainer) {
+	mapContainer.addEventListener("click", loadMap, options);
+	mapContainer.addEventListener("mouseover", loadMap, options);
+	mapContainer.addEventListener("touchstart", loadMap, options);
+	mapContainer.addEventListener("touchmove", loadMap, options);
+}
 
 let mapLoaded = false;
 function loadMap() {

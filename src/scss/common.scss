@@ -32,6 +32,8 @@
 	font-family: $fontSecondary;
 	text-transform: uppercase;
 
+	margin-bottom: 30px;
+
 	&--dark {
 		color: $blackAlpha;
 	}
@@ -42,12 +44,14 @@
 
 	@include media-tablet-lg {
 		font-size: 25px;
+		margin-bottom: 20px;
 	}
 }
 
 .title-secondary {
 	font-size: 30px;
 	font-family: $fontSecondary;
+	margin-bottom: 30px;
 
 	&--dark {
 		color: $blackAlpha;
@@ -55,6 +59,7 @@
 
 	@include media-tablet-lg {
 		font-size: 22px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -62,6 +67,7 @@
 	background-color: $blackAlpha;
 	color: $whiteAlpha;
 	font-size: 18px;
+	text-align: center;
 
 	padding: 12px 18px;
 
@@ -120,6 +126,9 @@
 }
 
 .slider-pagination {
+	display: flex;
+	align-items: center;
+
 	.swiper-pagination-bullet {
 		position: relative;
 		display: inline-block;

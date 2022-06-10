@@ -40,26 +40,38 @@ $maxWidthContainer: 1170 + $containerPadding * 2;
 // Обнуление и общие параметры ============================================================================================================================================================================================== =============================================================================================== ===============================================================================================
 @import "base/null";
 
-body {
-	// Скролл заблокирован
-	.lock & {
-		overflow: hidden;
-		touch-action: none;
-	}
-	// Сайт загружен
-	.loaded & {
-	}
+html {
+	scroll-behavior: smooth;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-// Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+body {
+	font-family: $fontPrimary;
+	font-size: $fontSize;
+
+	margin: 0;
+
+	color: $whiteAlpha;
+	background-color: $blackAlpha;
+}
+
+html,
+body {
+	height: 100%;
+}
+
 .wrapper {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
-	// Прижимаем footer
+
 	> main {
 		flex: 1 1 auto;
 	}
+
 	// Фикс для слайдеров
 	> * {
 		min-width: 0;
@@ -69,7 +81,17 @@ body {
 .page {
 	position: relative;
 
-	&--dark {
+	padding-top: 27px;
+
+	&--light {
+		background-color: $whiteAlpha;
+	}
+
+	&--paddingless {
+		padding-top: 0;
+	}
+
+	&--lock {
 		&::after {
 			display: none;
 			position: absolute;
@@ -89,6 +111,10 @@ body {
 			}
 		}
 	}
+
+	@include media-tablet-sm {
+		margin-top: 15px;
+	}
 }
 
 .container {
@@ -101,6 +127,7 @@ body {
 
 .scroll-hidden {
 	overflow: hidden;
+	touch-action: none;
 }
 
 @import "base";
@@ -111,6 +138,7 @@ body {
 @import "common/offer";
 @import "common/offer-slide";
 @import "common/update";
+@import "common/subscribe";
 @import "common/modal";
 @import "common/modal-book";
 @import "common/modal-offer";
@@ -125,3 +153,5 @@ body {
 @import "index/form-order";
 @import "index/location";
 @import "index/modal-about";
+
+@import "p-update";

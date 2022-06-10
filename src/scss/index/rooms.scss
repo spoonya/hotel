@@ -1,8 +1,7 @@
 .rooms {
-}
+	position: relative;
 
-.rooms__title {
-	margin-bottom: 30px;
+	z-index: 1;
 }
 
 .rooms__slide {
