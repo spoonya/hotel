@@ -1,3 +1,9 @@
+.edges {
+	@include media-tablet-lg {
+		margin-bottom: 30px;
+	}
+}
+
 .edges__top {
 	margin-bottom: 30px;
 }

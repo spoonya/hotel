@@ -1,6 +1,6 @@
 export const CLASSES = {
 	active: "active",
-	pageDark: "lock",
+	pageDark: "page--lock",
 	open: "open",
 	hidden: "hidden",
 	loading: "loading",
