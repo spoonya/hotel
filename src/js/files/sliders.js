@@ -571,6 +571,54 @@ function initSliders() {
 			on: {},
 		});
 	}
+
+	if (document.querySelector("#swiper-info-corp")) {
+		new Swiper("#swiper-info-corp", {
+			modules: [Pagination, Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			pagination: {
+				el: ".slider-pagination",
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: ".slider-button-prev",
+				nextEl: ".slider-button-next",
+			},
+
+			// События
+			on: {},
+		});
+	}
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {

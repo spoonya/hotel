@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.html',{
+"title":"Корпоративным клиентам"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html',{})
+    <main id="page" class="page">
+      <section class="corp">
+        <div class="container">
+          <h2 class="title">Корпоративным клиентам</h2>
+          <div class="info section">
+            <div class="info__slider">
+              <div id="swiper-info-corp" class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/corp-slide-1.jpg" width="655" height="578" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/intro.jpg" width="655" height="578" alt="">
+                  </div>
+                </div>
+                <div class="info__pagination slider-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="corp__descrip section">
+            <div class="corp__text text text--lg">
+              <p>
+                Отель «Дружба»- прекрасное место для проведения корпоративных мероприятий, семинаров,
+                встреч и конференций. Сотрудники отдела бронирования помогут Вам определиться с выбором номеров
+                разных категорий исходя из Вашего бюджета. У нас гибкая ценовая политика, учитывающая интересы
+                как постоянных клиентов, так пожелания туристических фирм и корпоративных клиентов.
+                Мы рады рассмотреть любые предложения и создать оптимальные условия для сотрудничества
+              </p>
+            </div>
+            <div class="corp__text text text--lg text--secondary">
+              <p>Тарифы на проживание не облагаются НДС (упрощённая система налогообложения).</p>
+            </div>
+          </div>
+          <ul class="corp__services section">
+            <li class="corp__services-item">
+              <div class="corp__services-img">
+                <img src="img/corp-1.jpg" width="555" height="400" alt="" loading="lazy">
+              </div>
+              <div class="corp__services-desrip">
+                <div class="corp__services-text text text--lg text--dark">
+                  <p>Ресторан нашего отеля - отличное место
+                    для проведения банкетов, торжеств
+                    и других мероприятий.</p>
+                  <p>Имеется специальное банкетное
+                    и фуршетное меню для корпоративных клиентов и туристических групп.</p>
+                </div>
+                <a href="#" class="corp__services-link button">Подробнее</a>
+              </div>
+            </li>
+            <li class="corp__services-item">
+              <div class="corp__services-img">
+                <img src="img/corp-2.jpg" width="555" height="400" alt="" loading="lazy">
+              </div>
+              <div class="corp__services-desrip">
+                <div class="corp__services-text text text--lg text--dark">
+                  <p>Так же мы предоставляем конференц-зала для деловых встреч или семинаров, организуем кофе-брейк.</p>
+                </div>
+                <a href="#" class="corp__services-link button">Подробнее</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.html', {})
+  </div>
+  <!--Modal-book-->
+  @@include('html/_modal-book.html',{})
+  <!--Modal-offer-tarif-->
+  @@include('html/_modal-offer-tariff.html',{})
+  @@include('html/_js.html',{})
+</body>
