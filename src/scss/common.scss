@@ -98,6 +98,14 @@
 		color: $blackAlpha;
 	}
 
+	&--lg {
+		font-size: 22px;
+
+		@include media-laptop {
+			font-size: 18px;
+		}
+	}
+
 	@include media-tablet-sm {
 		font-size: 16px;
 	}

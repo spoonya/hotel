@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.html',{
+"title":"Банкетный зал"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html',{})
+    <main id="page" class="page">
+      <section class="p-services section">
+        <div class="container">
+          <h2 class="title">Банкетный зал</h2>
+          <div class="info section">
+            <div class="info__slider">
+              <div id="swiper-info-banket" class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/service-banket.jpg" width="655" height="578" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/rooms-slide-1.jpg" width="655" height="578" alt="">
+                  </div>
+                </div>
+                <div class="info__pagination slider-pagination"></div>
+              </div>
+            </div>
+            <div class="info__descrip">
+              <div class="info__text text text--dark">
+                <p>Намечается банкет?
+                  Отметьте важное событие у нас.</p>
+                <p>Больше не надо тратить время на поиски возможных вариантов - наш персонал на основе Ваших пожеланий подготовит и проведет идеальный банкет.</p>
+                <p>Количество свободных парковочных мест рассчитано таким образом, чтобы обеспечить всех гостей, прибывших на личном транспорте.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-services__descrip">
+            <div class="p-services__descrip-content">
+              <div class="p-services__descrip-info">
+                <h2 class="p-services__descrip-info-title title-secondary">Мы предлагаем вам полную организацию мероприятия:</h2>
+                <div class="p-services__descrip-list text text--lg">
+                  <ul>
+                    <li>вместимость зала для банкета
+                      до 130 человек, для фуршета до 300 человек;</li>
+                    <li>живая музыка, танцевальная зона
+                      с профессиональным световым
+                      и музыкальным оборудованием;</li>
+                    <li>экран и проектор;</li>
+                    <li>индивидуальный подход в составлении
+                      и формировании банкетного меню
+                      с ориентированием на бюджет и потребности.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-services__descrip-info">
+                <h2 class="p-services__descrip-info-title title-secondary">Действующие скидки и предложения:</h2>
+                <div class="p-services__descrip-list text text--lg">
+                  <ul>
+                    <li>отсутствие платы за аренду зала;</li>
+                    <li>возможность обслуживания банкета
+                      с алкоголем заказчика;</li>
+                    <li>экран и проектор;</li>
+                    <li>скидка 5% на общий счет при организации
+                      банкета от 60 человек.</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="p-services__descrip-disclaimer text text--lg">
+                Каждой молодой паре по случаю свадьбы
+                в подарок - свадебный номер
+                с комплиментом от Нас!
+              </p>
+            </div>
+            <div class="p-services__descrip-book">
+              <div class="p-services__descrip-img">
+                <img src="img/service-banket-book.jpg" width="592" height="298" alt="" loading="lazy">
+              </div>
+              <button class="button button--secondary" data-modal-target="modal-book">Забронировать</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Offer-->
+      <div class="offer section">
+        <div class="container">
+          <div id="swiper-offer" class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-breakfast.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Завтрак</p>
+                  <div class="offer-slide__text">
+                    <p>В стоимость номера входит бесплатный завтрак по стистеме шведский стол. Стоит попробовать.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-bar-1.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Бар</p>
+                  <div class="offer-slide__text">
+                    <p>Приятное место. Первоклассные бармены. Отличные напитки. Шикарная отмосфера.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-zal.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Банкетный зал</p>
+                  <div class="offer-slide__text">
+                    <p>Тихое и спокойное место, где подают вкуснейшие блюда, разработанные лучшим шеф-поваром.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-sauna.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Сауна</p>
+                  <div class="offer-slide__text">
+                    <p>Среди нас есть те, кто любит отдохнуть в сауне? Если да, то Вам сюда. Запланируйте время отдыха уже сейчас.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-bar-2.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Бар</p>
+                  <div class="offer-slide__text">
+                    <p>Приятное место. Первоклассные бармены. Отличные напитки. Шикарная отмосфера.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-zal.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Ресторан</p>
+                  <div class="offer-slide__text">
+                    <p>Тихое и спокойное место, где подают вкуснейшие блюда, разработанные лучшим шеф-поваром.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+            </div>
+            <div class="offer__controls">
+              <button class="slider-button-prev" aria-label="предыдущий слайд"></button>
+              <div class="slider-pagination"></div>
+              <button class="slider-button-next" aria-label="следующий слайд"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/_footer.html', {})
+  </div>
+  <!--Modal-book-->
+  @@include('html/_modal-book.html',{})
+  <!--Modal-offer-tarif-->
+  @@include('html/_modal-offer-tariff.html',{})
+  @@include('html/_js.html',{})
+</body>

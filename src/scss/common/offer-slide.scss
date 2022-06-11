@@ -1,4 +1,7 @@
 .offer-slide {
+	display: flex;
+	flex-direction: column;
+
 	background-color: $whiteAlpha;
 }
 
@@ -27,6 +30,8 @@
 }
 
 .offer-slide__text {
+	flex-grow: 1;
+
 	font-size: 22px;
 	color: $blackAlpha;
 
