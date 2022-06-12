@@ -81,8 +81,6 @@ body {
 .page {
 	position: relative;
 
-	padding-top: 27px;
-
 	&--light {
 		background-color: $whiteAlpha;
 	}
@@ -113,7 +111,9 @@ body {
 	}
 
 	@include media-tablet-sm {
-		padding-top: 15px;
+		&:not(.page--paddingless) {
+			padding-top: 15px;
+		}
 	}
 }
 
