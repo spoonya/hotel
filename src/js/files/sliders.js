@@ -476,54 +476,6 @@ function initSliders() {
 		});
 	}
 
-	if (document.querySelector("#swiper-info-rooms")) {
-		new Swiper("#swiper-info-rooms", {
-			modules: [Pagination, Navigation],
-			observer: true,
-			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
-			speed: 800,
-
-			//touchRatio: 0,
-			//simulateTouch: false,
-			loop: true,
-			//preloadImages: false,
-			//lazy: true,
-
-			/*
-			// Эффекты
-			effect: 'fade',
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
-			*/
-
-			pagination: {
-				el: ".slider-pagination",
-				clickable: true,
-			},
-
-			// Скроллбар
-			/*
-			scrollbar: {
-				el: '.swiper-scrollbar',
-				draggable: true,
-			},
-			*/
-
-			// Кнопки "влево/вправо"
-			navigation: {
-				prevEl: ".slider-button-prev",
-				nextEl: ".slider-button-next",
-			},
-
-			// События
-			on: {},
-		});
-	}
-
 	if (document.querySelector("#swiper-info-bar")) {
 		new Swiper("#swiper-info-bar", {
 			modules: [Pagination, Navigation],
@@ -614,6 +566,48 @@ function initSliders() {
 				prevEl: ".slider-button-prev",
 				nextEl: ".slider-button-next",
 			},
+
+			// События
+			on: {},
+		});
+	}
+
+	if (document.querySelector("#swiper-info-boat")) {
+		new Swiper("#swiper-info-boat", {
+			modules: [Pagination, Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			pagination: {
+				el: ".slider-pagination",
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
 
 			// События
 			on: {},

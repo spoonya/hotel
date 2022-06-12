@@ -153,6 +153,10 @@
 			margin-right: 10px;
 		}
 
+		&:only-child {
+			display: none;
+		}
+
 		&::after {
 			position: absolute;
 			display: none;

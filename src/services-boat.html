@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.html',{
+"title":"Морские прогулки"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html',{})
+    <main id="page" class="page">
+      <section class="p-services section">
+        <div class="container">
+          <h1 class="title">Морские прогулки</h1>
+          <div class="info section">
+            <div class="info__slider">
+              <div id="swiper-info-boat" class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/boat-slide-1.jpg" width="655" height="578" alt="">
+                  </div>
+                </div>
+                <div class="info__pagination slider-pagination"></div>
+              </div>
+            </div>
+            <div class="info__descrip">
+              <div class="info__text text text--dark">
+                <p>В хорошую солнечную погоду особенно хочется быть ближе к воде и провести время на природе. И не зря: это один
+                  из самых приятных и живописных способов познакомиться с нашим городом!</p>
+                <p>Мы предлагаем разные водные маршруты для туристов с любыми интересами
+                  и бюджетом: от небольших прогулок
+                  по заливу до более длительных
+                  и познавательных. Если предпочитаете путешествия в кругу близких, то вы можете заказать прогулку на катере. Так у вас появится возможность составить маршрут индивидуально.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-services__boat">
+            <h2 class="p-services__boat-title title-secondary">Маршруты:</h2>
+            <div class="p-services__boat-info">
+              <table class="p-services__boat-table">
+                <thead>
+                  <tr>
+                    <th>«До Монрепо»</th>
+                    <th>1 час</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Взрослые</td>
+                    <td>Дети с 3-х до 13-ти лет</td>
+                  </tr>
+                  <tr>
+                    <td>750 ₽</td>
+                    <td>500 ₽</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2">
+                      <button class="button" data-modal-target="modal-book">Забронировать</button>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+              <table class="p-services__boat-table">
+                <thead>
+                  <tr>
+                    <th>«До Туры»</th>
+                    <th>1 час</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Взрослые</td>
+                    <td>Дети с 3-х до 13-ти лет</td>
+                  </tr>
+                  <tr>
+                    <td>750 ₽</td>
+                    <td>500 ₽</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2">
+                      <button class="button" data-modal-target="modal-book">Забронировать</button>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+              <table class="p-services__boat-table">
+                <thead>
+                  <tr>
+                    <th>«Круговой»</th>
+                    <th>1 час 20 минут</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Взрослые</td>
+                    <td>Дети с 3-х до 13-ти лет</td>
+                  </tr>
+                  <tr>
+                    <td>950 ₽</td>
+                    <td>700 ₽</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2">
+                      <button class="button" data-modal-target="modal-book">Забронировать</button>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+              <table class="p-services__boat-table">
+                <thead>
+                  <tr>
+                    <th>«Ночной»</th>
+                    <th>30 минут</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Взрослые</td>
+                    <td>Дети с 3-х до 13-ти лет</td>
+                  </tr>
+                  <tr>
+                    <td>500 ₽</td>
+                    <td>350 ₽</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2">
+                      <button class="button" data-modal-target="modal-book">Забронировать</button>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+              <table class="p-services__boat-table">
+                <thead>
+                  <tr>
+                    <th>
+                      <p>Почасовая аренда катера - 7000 ₽/час</p>
+                      <p>Каждый последующий час 6000 ₽.</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr>
+                    <td>
+                      <button class="button" data-modal-target="modal-book">Забронировать</button>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Offer-->
+      <div class="offer section">
+        <div class="container">
+          <div id="swiper-offer" class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-breakfast.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Завтрак</p>
+                  <div class="offer-slide__text">
+                    <p>В стоимость номера входит бесплатный завтрак по стистеме шведский стол. Стоит попробовать.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-bar-1.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Бар</p>
+                  <div class="offer-slide__text">
+                    <p>Приятное место. Первоклассные бармены. Отличные напитки. Шикарная отмосфера.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-zal.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Банкетный зал</p>
+                  <div class="offer-slide__text">
+                    <p>Тихое и спокойное место, где подают вкуснейшие блюда, разработанные лучшим шеф-поваром.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-sauna.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Сауна</p>
+                  <div class="offer-slide__text">
+                    <p>Среди нас есть те, кто любит отдохнуть в сауне? Если да, то Вам сюда. Запланируйте время отдыха уже сейчас.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-bar-2.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Бар</p>
+                  <div class="offer-slide__text">
+                    <p>Приятное место. Первоклассные бармены. Отличные напитки. Шикарная отмосфера.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-zal.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Ресторан</p>
+                  <div class="offer-slide__text">
+                    <p>Тихое и спокойное место, где подают вкуснейшие блюда, разработанные лучшим шеф-поваром.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+            </div>
+            <div class="offer__controls">
+              <button class="slider-button-prev" aria-label="предыдущий слайд"></button>
+              <div class="slider-pagination"></div>
+              <button class="slider-button-next" aria-label="следующий слайд"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/_footer.html', {})
+  </div>
+  <!--Modal-book-->
+  @@include('html/_modal-book.html',{})
+  <!--Modal-offer-tarif-->
+  @@include('html/_modal-offer-tariff.html',{})
+  @@include('html/_js.html',{})
+</body>

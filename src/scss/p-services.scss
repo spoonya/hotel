@@ -73,3 +73,100 @@
 .p-services__descrip-info-title {
 	margin-bottom: 15px;
 }
+
+.p-services__boat-item-title {
+	font-size: 27px;
+	font-family: $fontSecondary;
+}
+
+.p-services__boat-table {
+	color: $blackAlpha;
+	text-align: center;
+
+	border-collapse: collapse;
+
+	width: 100%;
+
+	margin: 0 -5px;
+
+	&:not(:last-child) {
+		margin-bottom: 30px;
+
+		@include media-tablet-lg {
+			margin-bottom: 15px;
+		}
+	}
+
+	.button {
+		font-family: $fontSecondary;
+		font-size: 22px;
+
+		padding: 12px 40px;
+
+		@include media-tablet-lg {
+			font-size: 20px;
+		}
+
+		@include media-tablet-sm {
+			font-size: 16px;
+		}
+	}
+
+	thead,
+	td {
+		border: 5px solid $blackAlpha;
+	}
+
+	th {
+		font-size: 27px;
+		font-family: $fontSecondary;
+		font-weight: 400;
+
+		padding: 30px;
+
+		width: 50%;
+
+		@include media-tablet-lg {
+			font-size: 20px;
+
+			padding: 15px;
+		}
+
+		@include media-tablet-sm {
+			font-size: 18px;
+		}
+	}
+
+	thead {
+		border-collapse: collapse;
+	}
+
+	tbody {
+		td {
+			font-size: 20px;
+
+			padding: 25px;
+
+			@include media-tablet-lg {
+				font-size: 18px;
+			}
+
+			@include media-tablet-sm {
+				font-size: 16px;
+
+				padding: 15px;
+			}
+		}
+	}
+
+	th,
+	td {
+		background-color: $whiteAlpha;
+	}
+
+	tfoot {
+		td {
+			padding: 15px;
+		}
+	}
+}
