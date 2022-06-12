@@ -54,7 +54,7 @@ li.info {
 	@include media-tablet-sm {
 		max-width: unset;
 		max-height: 250px;
-		padding-top: 56%;
+		padding-top: 56.25%;
 	}
 
 	.swiper {
@@ -114,4 +114,49 @@ li.info {
 
 .info__link {
 	padding: 12px 40px;
+}
+
+.info__button-next,
+.info__button-prev {
+	position: absolute;
+
+	top: 50%;
+
+	transform: translateY(-50%);
+
+	background-image: url("../img/arrow-right-2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40px;
+
+	height: 120px;
+	width: 90px;
+
+	transition: background-color 0.1s linear;
+
+	&:hover {
+		background-color: $blackAlpha;
+	}
+
+	@include media-laptop {
+		height: 80px;
+		width: 80px;
+	}
+
+	@include media-tablet-lg {
+		background-size: 30px;
+
+		height: 50px;
+		width: 50px;
+	}
+}
+
+.info__button-prev {
+	transform: scale(-1, -1) translateY(50%);
+
+	left: 0;
+}
+
+.info__button-next {
+	right: 0;
 }

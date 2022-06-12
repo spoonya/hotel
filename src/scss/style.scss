@@ -113,7 +113,7 @@ body {
 	}
 
 	@include media-tablet-sm {
-		margin-top: 15px;
+		padding-top: 15px;
 	}
 }
 
@@ -160,3 +160,5 @@ body {
 @import "p-services";
 
 @import "corp.scss";
+
+@import "room.scss";
