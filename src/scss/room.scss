@@ -43,6 +43,7 @@
 .room__into-title {
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
+	line-height: 1;
 
 	font-size: 80px;
 
@@ -122,6 +123,7 @@
 .room__descrip {
 	display: flex;
 	justify-content: space-between;
+	align-items: stretch;
 
 	@include media-tablet-sm {
 		flex-direction: column;
@@ -218,6 +220,7 @@
 .room__descrip-img {
 	img {
 		object-fit: cover;
+		height: 100%;
 
 		@include media-tablet-lg {
 			max-height: 400px;

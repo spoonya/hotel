@@ -1,91 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/_head.html',{
-"title":"Развлечения"
+"title":"Ресторан Балтик-парк"
 })
 
 <body>
   <div class="wrapper">
     @@include('html/_header.html',{})
     <main id="page" class="page">
-      <!--Update-->
-      <section class="update section">
+      <section class="p-services section">
         <div class="container">
-          <h1 class="update__title title">Развлечения</h1>
-          <ul class="update__list">
-            <li class="update__item update__item--lg">
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h2 class="update__item-title title-secondary title-secondary--dark">Мероприятие первое</h2>
-                  <div class="update__item-text text text--dark">
-                    <p>Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Таким образом рамки и место обучения кадров представляет собой интересный эксперимент проверки форм развития.</p>
+          <h1 class="title">Ресторан "Балтик-парк"</h1>
+          <div class="info section">
+            <div class="info__slider">
+              <div id="swiper-info-service" class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/service-restaurant-slide-1.jpg" width="655" height="578" alt="">
                   </div>
-                  <a href="#" class="update__item-link">Подробнее</a>
-                </div>
-              </div>
-              <div class="update__item-img">
-                <img src="img/update-1.jpg" width="570" height="489" alt="" loading="lazy">
-              </div>
-            </li>
-            <li class="update__item">
-              <div class="update__item-img">
-                <img src="img/update-2.jpg" width="555" height="343" alt="" loading="lazy">
-              </div>
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h3 class="update__item-title title-secondary title-secondary--dark">Мероприятие первое второе</h3>
-                  <a href="#" class="update__item-link">Подробнее</a>
-                </div>
-              </div>
-            </li>
-            <li class="update__item">
-              <div class="update__item-img">
-                <img src="img/update-3.jpg" width="555" height="343" alt="" loading="lazy">
-              </div>
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h3 class="update__item-title title-secondary title-secondary--dark">Мероприятие третье</h3>
-                  <a href="#" class="update__item-link">Подробнее</a>
-                </div>
-              </div>
-            </li>
-            <li class="update__item update__item--lg">
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h3 class="update__item-title title-secondary title-secondary--dark">Мероприятие четвёртое</h3>
-                  <div class="update__item-text text text--dark">
-                    <p>Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Таким образом рамки и место обучения кадров представляет собой интересный эксперимент проверки форм развития.</p>
+                  <div class="swiper-slide">
+                    <img src="img/service-restaurant.jpg" width="655" height="578" alt="">
                   </div>
-                  <a href="#" class="update__item-link">Подробнее</a>
+                </div>
+                <div class="info__pagination slider-pagination"></div>
+              </div>
+            </div>
+            <div class="info__descrip">
+              <div class="info__text text text--dark">
+                <p>Осторожно, слишком вкусно!
+                  У нас представлены блюда русской
+                  и европейской кухни.</p>
+                <p>В ресторане отеля «Дружба» ежедневно сервируется завтрак «Шведский стол»,
+                  по будням дням «Бизнес Ланч», а вечером вы можете отведать сытные блюда русской и европейской кухни.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-services__descrip">
+            <div class="p-services__descrip-content">
+              <div class="p-services__descrip-info">
+                <div class="p-services__text text text--light text--lg">
+                  <p>Наши повара – настоящие мастера своего
+                    дела. Они не устанут радовать вас своими
+                    кулинарными шедеврами и сделают
+                    все в лучшем виде. Опытные официанты
+                    помогут правильно подобрать блюда
+                    и напитки к ним.</p>
+                  <p>Завораживающие вид на набережную,
+                    безупречный сервис и любимая еда —
+                    звучит как идеальный план для отдыха.</p>
                 </div>
               </div>
-              <div class="update__item-img">
-                <img src="img/update-1.jpg" width="570" height="489" alt="" loading="lazy">
+            </div>
+            <div class="p-services__descrip-book">
+              <div class="p-services__descrip-img">
+                <img src="img/service-restaurant-book.jpg" width="592" height="298" alt="" loading="lazy">
               </div>
-            </li>
-            <li class="update__item">
-              <div class="update__item-img">
-                <img src="img/update-2.jpg" width="555" height="343" alt="" loading="lazy">
-              </div>
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h3 class="update__item-title title-secondary title-secondary--dark">Мероприятие пятое</h3>
-                  <a href="#" class="update__item-link">Подробнее</a>
-                </div>
-              </div>
-            </li>
-            <li class="update__item">
-              <div class="update__item-img">
-                <img src="img/update-4.jpg" width="555" height="343" alt="" loading="lazy">
-              </div>
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h3 class="update__item-title title-secondary title-secondary--dark">Мероприятие шестое</h3>
-                  <a href="#" class="update__item-link">Подробнее</a>
-                </div>
-              </div>
-            </li>
-          </ul>
+              <button class="button button--secondary" data-modal-target="modal-book">Забронировать</button>
+            </div>
+          </div>
         </div>
       </section>
       <!--Offer-->
@@ -165,6 +137,8 @@
     </main>
     @@include('html/_footer.html', {})
   </div>
+  <!--Modal-book-->
+  @@include('html/_modal-book.html',{})
   <!--Modal-offer-tarif-->
   @@include('html/_modal-offer-tariff.html',{})
   <!--Modal-offer-kids-->
@@ -177,9 +151,5 @@
   @@include('html/_modal-offer-lunch.html',{})
   <!--Modal-offer-early-booking-->
   @@include('html/_modal-offer-early-booking.html',{})
-  <!--Modal-book-->
-  @@include('html/_modal-book.html',{})
   @@include('html/_js.html',{})
 </body>
-
-</html>

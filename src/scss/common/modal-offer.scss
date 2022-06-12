@@ -68,6 +68,32 @@
 	}
 }
 
+.modal-offer__text-list {
+	p:not(:last-child) {
+		margin-bottom: 0;
+	}
+
+	li {
+		position: relative;
+
+		padding-left: 10px;
+
+		&::before {
+			content: "";
+
+			position: absolute;
+
+			left: 0;
+			top: 0.55em;
+
+			height: 1px;
+			width: 5px;
+
+			background-color: $blackAlpha;
+		}
+	}
+}
+
 .modal-offer__phone {
 	@include media-tablet-lg {
 		margin-bottom: 15px;

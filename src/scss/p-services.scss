@@ -10,9 +10,11 @@
 
 .p-services__descrip-img {
 	margin-bottom: 10px;
+	width: 100%;
 
 	img {
 		object-fit: cover;
+		max-height: 297px;
 	}
 }
 
@@ -25,14 +27,17 @@
 }
 
 .p-services__descrip-content {
-	max-width: 491px;
 	width: 100%;
-	margin-right: 20px;
 
-	@include media-tablet-lg {
-		margin-right: 0;
-		margin-bottom: 20px;
-		max-width: unset;
+	&:not(:only-child) {
+		max-width: 518px;
+		margin-right: 20px;
+
+		@include media-tablet-lg {
+			margin-right: 0;
+			margin-bottom: 20px;
+			max-width: unset;
+		}
 	}
 }
 
@@ -168,5 +173,13 @@
 		td {
 			padding: 15px;
 		}
+	}
+}
+
+.p-services__text {
+	line-height: 1.5;
+
+	p:not(:last-child) {
+		margin-bottom: 30px;
 	}
 }

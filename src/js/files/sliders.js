@@ -142,7 +142,7 @@ function initSliders() {
 
 	if (document.querySelector("#swiper-info-rooms")) {
 		new Swiper("#swiper-info-rooms", {
-			modules: [Pagination, Navigation],
+			modules: [Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -176,12 +176,6 @@ function initSliders() {
 				draggable: true,
 			},
 			*/
-
-			// Кнопки "влево/вправо"
-			navigation: {
-				prevEl: ".slider-button-prev",
-				nextEl: ".slider-button-next",
-			},
 
 			// События
 			on: {},
@@ -190,7 +184,7 @@ function initSliders() {
 
 	if (document.querySelector("#swiper-info-parking")) {
 		new Swiper("#swiper-info-parking", {
-			modules: [Pagination, Navigation],
+			modules: [Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -224,12 +218,6 @@ function initSliders() {
 				draggable: true,
 			},
 			*/
-
-			// Кнопки "влево/вправо"
-			navigation: {
-				prevEl: ".slider-button-prev",
-				nextEl: ".slider-button-next",
-			},
 
 			// События
 			on: {},
@@ -238,7 +226,7 @@ function initSliders() {
 
 	if (document.querySelector("#swiper-info-sauna")) {
 		new Swiper("#swiper-info-sauna", {
-			modules: [Pagination, Navigation],
+			modules: [Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -272,12 +260,6 @@ function initSliders() {
 				draggable: true,
 			},
 			*/
-
-			// Кнопки "влево/вправо"
-			navigation: {
-				prevEl: ".slider-button-prev",
-				nextEl: ".slider-button-next",
-			},
 
 			// События
 			on: {},
@@ -286,7 +268,7 @@ function initSliders() {
 
 	if (document.querySelector("#swiper-info-restaurant")) {
 		new Swiper("#swiper-info-restaurant", {
-			modules: [Pagination, Navigation],
+			modules: [Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -320,12 +302,6 @@ function initSliders() {
 				draggable: true,
 			},
 			*/
-
-			// Кнопки "влево/вправо"
-			navigation: {
-				prevEl: ".slider-button-prev",
-				nextEl: ".slider-button-next",
-			},
 
 			// События
 			on: {},
@@ -334,7 +310,7 @@ function initSliders() {
 
 	if (document.querySelector("#swiper-info-banket")) {
 		new Swiper("#swiper-info-banket", {
-			modules: [Pagination, Navigation],
+			modules: [Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -369,12 +345,6 @@ function initSliders() {
 			},
 			*/
 
-			// Кнопки "влево/вправо"
-			navigation: {
-				prevEl: ".slider-button-prev",
-				nextEl: ".slider-button-next",
-			},
-
 			// События
 			on: {},
 		});
@@ -382,7 +352,7 @@ function initSliders() {
 
 	if (document.querySelector("#swiper-info-terrasa")) {
 		new Swiper("#swiper-info-terrasa", {
-			modules: [Pagination, Navigation],
+			modules: [Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -430,7 +400,7 @@ function initSliders() {
 
 	if (document.querySelector("#swiper-info-club")) {
 		new Swiper("#swiper-info-club", {
-			modules: [Pagination, Navigation],
+			modules: [Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -464,12 +434,6 @@ function initSliders() {
 				draggable: true,
 			},
 			*/
-
-			// Кнопки "влево/вправо"
-			navigation: {
-				prevEl: ".slider-button-prev",
-				nextEl: ".slider-button-next",
-			},
 
 			// События
 			on: {},
@@ -478,7 +442,7 @@ function initSliders() {
 
 	if (document.querySelector("#swiper-info-bar")) {
 		new Swiper("#swiper-info-bar", {
-			modules: [Pagination, Navigation],
+			modules: [Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -512,12 +476,6 @@ function initSliders() {
 				draggable: true,
 			},
 			*/
-
-			// Кнопки "влево/вправо"
-			navigation: {
-				prevEl: ".slider-button-prev",
-				nextEl: ".slider-button-next",
-			},
 
 			// События
 			on: {},
@@ -526,7 +484,7 @@ function initSliders() {
 
 	if (document.querySelector("#swiper-info-corp")) {
 		new Swiper("#swiper-info-corp", {
-			modules: [Pagination, Navigation],
+			modules: [Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -561,12 +519,6 @@ function initSliders() {
 			},
 			*/
 
-			// Кнопки "влево/вправо"
-			navigation: {
-				prevEl: ".slider-button-prev",
-				nextEl: ".slider-button-next",
-			},
-
 			// События
 			on: {},
 		});
@@ -574,7 +526,49 @@ function initSliders() {
 
 	if (document.querySelector("#swiper-info-boat")) {
 		new Swiper("#swiper-info-boat", {
-			modules: [Pagination, Navigation],
+			modules: [Pagination],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			pagination: {
+				el: ".slider-pagination",
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// События
+			on: {},
+		});
+	}
+
+	if (document.querySelector("#swiper-info-service")) {
+		new Swiper("#swiper-info-service", {
+			modules: [Pagination],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,

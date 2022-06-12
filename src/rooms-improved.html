@@ -1,96 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/_head.html',{
-"title":"Развлечения"
+"title":"Улучшенный"
 })
 
 <body>
   <div class="wrapper">
     @@include('html/_header.html',{})
     <main id="page" class="page">
-      <!--Update-->
-      <section class="update section">
+      <section class="room section">
         <div class="container">
-          <h1 class="update__title title">Развлечения</h1>
-          <ul class="update__list">
-            <li class="update__item update__item--lg">
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h2 class="update__item-title title-secondary title-secondary--dark">Мероприятие первое</h2>
-                  <div class="update__item-text text text--dark">
-                    <p>Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Таким образом рамки и место обучения кадров представляет собой интересный эксперимент проверки форм развития.</p>
+          <div class="room__intro">
+            <div class="room__intro-content">
+              <div class="room__slider-wrapper">
+                <div class="room__intro-info info section">
+                  <div class="info__slider room__slider">
+                    <div id="swiper-room" class="swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="img/room-improved-slide-1.jpg" width="1043" height="566" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="img/intro.jpg" width="655" height="578" alt="">
+                        </div>
+                      </div>
+                      <div class="info__pagination slider-pagination"></div>
+                    </div>
+                    <button class="info__button-prev" aria-label="предыдущий слайд"></button>
+                    <button class="info__button-next" aria-label="следующий слайд"></button>
                   </div>
-                  <a href="#" class="update__item-link">Подробнее</a>
                 </div>
               </div>
-              <div class="update__item-img">
-                <img src="img/update-1.jpg" width="570" height="489" alt="" loading="lazy">
-              </div>
-            </li>
-            <li class="update__item">
-              <div class="update__item-img">
-                <img src="img/update-2.jpg" width="555" height="343" alt="" loading="lazy">
-              </div>
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h3 class="update__item-title title-secondary title-secondary--dark">Мероприятие первое второе</h3>
-                  <a href="#" class="update__item-link">Подробнее</a>
+              <div class="room__intro-descrip">
+                <div class="room__intro-descrip-text text">
+                  <p>После насыщенного дня, уютный светлый номер класса «Улучшенный» с гостевой зоной и просторной душевой комнатой, подарит Вам комфортный отдых, чтобы вы могли набраться сил для нового дня. Он пользуется популярностью у любителей отдыхать в одиночку и у тех, кто приезжает в Выборг в командировку
+                  </p>
+                  <p>Окунитесь с головой в эстетику современного интерьера, уют и комфорт.</p>
                 </div>
+                <button class="room__intro-descrip-button button button--secondary" data-modal-target="modal-book">Забронировать</button>
               </div>
-            </li>
-            <li class="update__item">
-              <div class="update__item-img">
-                <img src="img/update-3.jpg" width="555" height="343" alt="" loading="lazy">
+            </div>
+            <h1 class="room__into-title title">Улучшенный</h1>
+          </div>
+          <div class="room__descrip">
+            <div class="room__descrip-content">
+              <div class="room__descrip-list section">
+                <ul>
+                  <li>Посуда</li>
+                  <li>Телевизор</li>
+                  <li>Душ и туалет</li>
+                  <li>Wi-Fi</li>
+                  <li>Завтрак</li>
+                  <li>Сауна</li>
+                  <li>Кондиционер</li>
+                </ul>
               </div>
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h3 class="update__item-title title-secondary title-secondary--dark">Мероприятие третье</h3>
-                  <a href="#" class="update__item-link">Подробнее</a>
-                </div>
+              <div class="room__descrip-text text">
+                <p class="room__descrip-text-title">Номер включает в себя все удобства:</p>
+                <p>Гостевая зона, мягкие кровати, туалетный столик, просторные шкафы, телефон, посуда, телевизор, современная ванная комната со средствами личной гигиены, туалет и душ.</p>
+                <p>Расчетный час: заезд - в 14.00, выезд - в 12.00. В стоимость включены завтрак в формате «Шведский стол» и посещение утренней сауны.</p>
+                <p>На завтра в ресторане «Балтик-Парк» каждый день с 7:00 до 10:00 Вас ждут свежая выпечка, омлет, сосиски, каша, кофе, чай, фрукты, разнообразные закуски и многое другое.</p>
               </div>
-            </li>
-            <li class="update__item update__item--lg">
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h3 class="update__item-title title-secondary title-secondary--dark">Мероприятие четвёртое</h3>
-                  <div class="update__item-text text text--dark">
-                    <p>Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Таким образом рамки и место обучения кадров представляет собой интересный эксперимент проверки форм развития.</p>
-                  </div>
-                  <a href="#" class="update__item-link">Подробнее</a>
-                </div>
-              </div>
-              <div class="update__item-img">
-                <img src="img/update-1.jpg" width="570" height="489" alt="" loading="lazy">
-              </div>
-            </li>
-            <li class="update__item">
-              <div class="update__item-img">
-                <img src="img/update-2.jpg" width="555" height="343" alt="" loading="lazy">
-              </div>
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h3 class="update__item-title title-secondary title-secondary--dark">Мероприятие пятое</h3>
-                  <a href="#" class="update__item-link">Подробнее</a>
-                </div>
-              </div>
-            </li>
-            <li class="update__item">
-              <div class="update__item-img">
-                <img src="img/update-4.jpg" width="555" height="343" alt="" loading="lazy">
-              </div>
-              <div class="update__item-content">
-                <div class="update__item-descrip">
-                  <h3 class="update__item-title title-secondary title-secondary--dark">Мероприятие шестое</h3>
-                  <a href="#" class="update__item-link">Подробнее</a>
-                </div>
-              </div>
-            </li>
-          </ul>
+            </div>
+            <div class="room__descrip-img">
+              <img src="img/room-improved.jpg" width="652" height="806" alt="" loading="lazy">
+            </div>
+          </div>
         </div>
       </section>
       <!--Offer-->
       <div class="offer section">
         <div class="container">
+          <h2 class="title">Дополнительно</h2>
           <div id="swiper-offer" class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide offer-slide">
@@ -165,6 +146,8 @@
     </main>
     @@include('html/_footer.html', {})
   </div>
+  <!--Modal-book-->
+  @@include('html/_modal-book.html',{})
   <!--Modal-offer-tarif-->
   @@include('html/_modal-offer-tariff.html',{})
   <!--Modal-offer-kids-->
@@ -177,9 +160,5 @@
   @@include('html/_modal-offer-lunch.html',{})
   <!--Modal-offer-early-booking-->
   @@include('html/_modal-offer-early-booking.html',{})
-  <!--Modal-book-->
-  @@include('html/_modal-book.html',{})
   @@include('html/_js.html',{})
 </body>
-
-</html>
