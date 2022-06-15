@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.html',{
+"title":"Номерной фонд"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html',{})
+    <main id="page" class="page">
+      <section class="rooms section">
+        <div class="container">
+          <h1 class="title">Номерной фонд</h1>
+          <ul class="rooms__list">
+            <li class="info info--md info--reverse info--backing info--padding-md">
+              <div class="info__slider">
+                <div id="swiper-info-rooms-eco" class="swiper info__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/rooms-eco-slide-1.jpg" width="655" height="455" alt="">
+                    </div>
+                  </div>
+                  <div class="info__pagination slider-pagination"></div>
+                </div>
+              </div>
+              <div class="info__descrip">
+                <div class="info__descrip-top">
+                  <h2 class="title-secondary title-secondary--dark">Эконом</h2>
+                  <p class="info__descrip__price">от 3300 ₽/ночь</p>
+                </div>
+                <div class="rooms__descrip-text info__text text text--dark">
+                  <p>Этот вариант будет отличным решением, если Вы приехали на пару дней в наш город и планируете больше времени проводить на прогулках по нашему прекрасному городу, а возвращаться отель для приятного отдыха, после активного дня.</p>
+                  <p>Лучший вариант для экономии бюджета.</p>
+                </div>
+                <div class="info__descrip-bot">
+                  <a href="rooms-eco.html" class="info__link button">Подробнее</a>
+                  <button class="button" data-modal-target="modal-book">Выбрать</button>
+                </div>
+              </div>
+            </li>
+            <li class="info info--md info--reverse info--backing info--padding-md">
+              <div class="info__slider">
+                <div id="swiper-info-rooms-improved" class="swiper info__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/rooms-improved-slide-1.jpg" width="655" height="455" alt="">
+                    </div>
+                  </div>
+                  <div class="info__pagination slider-pagination"></div>
+                </div>
+              </div>
+              <div class="info__descrip">
+                <div class="info__descrip-top">
+                  <h2 class="title-secondary title-secondary--dark">Улучшенный</h2>
+                  <p class="info__descrip__price">от 3600 ₽/ночь</p>
+                </div>
+                <div class="rooms__descrip-text info__text text text--dark">
+                  <p>Классический номер в нашем списке. Здесь есть всё, что потребуется для комфортного и долгосрочного проживания на территории
+                    отеля «Дружба». Напоминаем о прекрасном виде из окон на водоем, расположенный около отеля.</p>
+                  <p>Решение для тех, кто любит комфорт.</p>
+                </div>
+                <div class="info__descrip-bot">
+                  <a href="rooms-improved.html" class="info__link button">Подробнее</a>
+                  <button class="button" data-modal-target="modal-book">Выбрать</button>
+                </div>
+              </div>
+            </li>
+            <li class="info info--md info--reverse info--backing info--padding-md">
+              <div class="info__slider">
+                <div id="swiper-info-rooms-lux" class="swiper info__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/rooms-lux-slide-1.jpg" width="655" height="455" alt="">
+                    </div>
+                  </div>
+                  <div class="info__pagination slider-pagination"></div>
+                </div>
+              </div>
+              <div class="info__descrip">
+                <div class="info__descrip-top">
+                  <h2 class="title-secondary title-secondary--dark">Люкс</h2>
+                  <p class="info__descrip__price">от 6700 ₽/ночь</p>
+                </div>
+                <div class="rooms__descrip-text info__text text text--dark">
+                  <p>Вы определенно любите наслаждаться жизнью. Это уже не просто номер. Это практически
+                    целая квартира в центре Выборга с отличным
+                    видом на залив. Здесь Вы сможете окунуться
+                    в романтику Парижа, насладиться комфортом Рима, побывать в Каире или Токио.</p>
+                  <p>Решение для тех, кто любит комфорт.</p>
+                </div>
+                <div class="info__descrip-bot">
+                  <a href="rooms-lux.html" class="info__link button">Подробнее</a>
+                  <button class="button" data-modal-target="modal-book">Выбрать</button>
+                </div>
+              </div>
+            </li>
+            <li class="info info--md info--reverse info--backing info--padding-md">
+              <div class="info__slider">
+                <div id="swiper-info-rooms-president" class="swiper info__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/rooms-president-slide-1.jpg" width="655" height="455" alt="">
+                    </div>
+                  </div>
+                  <div class="info__pagination slider-pagination"></div>
+                </div>
+              </div>
+              <div class="info__descrip">
+                <div class="info__descrip-top">
+                  <h2 class="title-secondary title-secondary--dark">Президент</h2>
+                  <p class="info__descrip__price">от 8300 ₽/ночь</p>
+                </div>
+                <div class="rooms__descrip-text info__text text text--dark">
+                  <p>Да, у нас есть, чем Вас удивить. Роскошь - отличительная черта данного номера. Идеальное место для комфортного проживания, проведения переговоров и деловых встреч. Респектабельная мебель, идеальное сочетание элегантности, удобства и стиля.
+                  </p>
+                  <p>Шикарнее только вид из космоса.</p>
+                </div>
+                <div class="info__descrip-bot">
+                  <a href="rooms-president.html" class="info__link button">Подробнее</a>
+                  <button class="button" data-modal-target="modal-book">Выбрать</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Offer-->
+      <div class="offer section">
+        <div class="container">
+          <div id="swiper-offer" class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-breakfast.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Завтрак</p>
+                  <div class="offer-slide__text">
+                    <p>В стоимость номера входит бесплатный завтрак по стистеме шведский стол. Стоит попробовать.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-bar-1.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Бар</p>
+                  <div class="offer-slide__text">
+                    <p>Приятное место. Первоклассные бармены. Отличные напитки. Шикарная отмосфера.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-zal.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Банкетный зал</p>
+                  <div class="offer-slide__text">
+                    <p>Тихое и спокойное место, где подают вкуснейшие блюда, разработанные лучшим шеф-поваром.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-sauna.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Сауна</p>
+                  <div class="offer-slide__text">
+                    <p>Среди нас есть те, кто любит отдохнуть в сауне? Если да, то Вам сюда. Запланируйте время отдыха уже сейчас.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-bar-2.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Бар</p>
+                  <div class="offer-slide__text">
+                    <p>Приятное место. Первоклассные бармены. Отличные напитки. Шикарная отмосфера.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-zal.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Ресторан</p>
+                  <div class="offer-slide__text">
+                    <p>Тихое и спокойное место, где подают вкуснейшие блюда, разработанные лучшим шеф-поваром.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+            </div>
+            <div class="offer__controls">
+              <button class="slider-button-prev" aria-label="предыдущий слайд"></button>
+              <div class="slider-pagination"></div>
+              <button class="slider-button-next" aria-label="следующий слайд"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/_footer.html', {})
+  </div>
+  <!--Modal-about-->
+  @@include('html/index/_modal-about.html',{})
+  <!--Modal-offer-tarif-->
+  @@include('html/_modal-offer-tariff.html',{})
+  <!--Modal-offer-kids-->
+  @@include('html/_modal-offer-kids.html',{})
+  <!--Modal-offer-animals-->
+  @@include('html/_modal-offer-animals.html',{})
+  <!--Modal-offer-breakfast-->
+  @@include('html/_modal-offer-breakfast.html',{})
+  <!--Modal-offer-lunch-->
+  @@include('html/_modal-offer-lunch.html',{})
+  <!--Modal-offer-early-booking-->
+  @@include('html/_modal-offer-early-booking.html',{})
+  <!--Modal-book-->
+  @@include('html/_modal-book.html',{})
+  @@include('html/_js.html',{})
+</body>
+
+</html>

@@ -12,11 +12,15 @@
 .about__text {
 	color: $blackAlpha;
 	font-size: 24px;
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 }
 
 .about__text {
 	font-size: 24px;
+
+	p:not(:last-child) {
+		margin-bottom: 20px;
+	}
 
 	@include media-laptop {
 		font-size: 18px;
@@ -48,10 +52,6 @@
 	max-width: 457px;
 	width: 100%;
 	margin: 0 auto;
-
-	img {
-		height: 100%;
-	}
 
 	@include media-custom-mf($media-lg) {
 		margin: 0;

@@ -1,0 +1,13 @@
+.rooms__descrip-text {
+	p {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.rooms__list {
+	.info:not(:last-child) {
+		margin-bottom: 55px;
+	}
+}
