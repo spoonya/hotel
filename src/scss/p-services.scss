@@ -30,7 +30,7 @@
 	width: 100%;
 
 	&:not(:only-child) {
-		max-width: 518px;
+		max-width: 488px;
 		margin-right: 20px;
 
 		@include media-tablet-lg {
@@ -47,7 +47,7 @@
 
 		padding-left: 20px;
 
-		line-height: 1.5;
+		line-height: 1.4;
 
 		&::before {
 			content: "";
@@ -66,11 +66,15 @@
 }
 
 .p-services__descrip-info {
+	width: 100%;
+
 	&:not(:last-child) {
 		margin-bottom: 30px;
 
 		@include media-tablet-lg {
 			margin-bottom: 20px;
+
+			max-width: unset;
 		}
 	}
 }
@@ -177,8 +181,6 @@
 }
 
 .p-services__text {
-	line-height: 1.5;
-
 	p:not(:last-child) {
 		margin-bottom: 30px;
 	}

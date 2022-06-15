@@ -95,12 +95,18 @@
 .text {
 	font-size: 18px;
 
+	span {
+		font-family: $fontPrimary;
+	}
+
 	&--dark {
 		color: $blackAlpha;
 	}
 
 	&--lg {
 		font-size: 22px;
+
+		line-height: 1.4;
 
 		@include media-laptop {
 			font-size: 18px;

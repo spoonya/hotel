@@ -10,9 +10,7 @@
 	flex-direction: column;
 	align-items: center;
 	height: 100%;
-
-	padding: 50px 34px 57px;
-
+	padding: 40px 34px 47px;
 	text-align: center;
 
 	@include media-laptop {
@@ -21,11 +19,11 @@
 }
 
 .offer-slide__title {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 
 	@include media-laptop {
 		font-size: 25px;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -35,11 +33,11 @@
 	font-size: 22px;
 	color: $blackAlpha;
 
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 
 	@include media-laptop {
 		font-size: 18px;
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 	}
 }
 

@@ -36,7 +36,7 @@ function initSliders() {
 			observer: true,
 			observeParents: true,
 			slidesPerView: 3,
-			spaceBetween: 28,
+			spaceBetween: 30,
 			speed: 800,
 
 			//touchRatio: 0,

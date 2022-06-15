@@ -27,6 +27,10 @@
 	min-height: 345px;
 	max-height: 345px;
 
+	@include media-laptop {
+		object-fit: cover;
+	}
+
 	@include media-tablet-lg {
 		min-height: 250px;
 		max-height: 250px;
