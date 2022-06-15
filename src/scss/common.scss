@@ -29,10 +29,11 @@
 
 .title {
 	font-size: 48px;
+	font-weight: 700;
 	font-family: $fontSecondary;
 	text-transform: uppercase;
 
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 
 	&--dark {
 		color: $blackAlpha;

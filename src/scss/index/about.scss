@@ -15,9 +15,18 @@
 	margin-bottom: 24px;
 }
 
-.about__text,
+.about__text {
+	font-size: 24px;
+
+	@include media-laptop {
+		font-size: 18px;
+	}
+}
+
 .about__button {
 	font-size: 24px;
+
+	padding: 8px 50px;
 
 	@include media-laptop {
 		font-size: 18px;
@@ -27,8 +36,8 @@
 .about__content {
 	margin-bottom: 20px;
 
-	@include media-custom-mf($media-lg) {
-		max-width: 647px;
+	@include media-custom-mf(992px) {
+		max-width: 648px;
 		width: 100%;
 		margin-right: 20px;
 		margin-bottom: 0;
@@ -36,12 +45,11 @@
 }
 
 .about__img {
-	max-width: 455px;
+	max-width: 457px;
 	width: 100%;
 	margin: 0 auto;
 
 	img {
-		object-fit: cover;
 		height: 100%;
 	}
 

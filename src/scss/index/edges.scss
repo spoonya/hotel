@@ -34,12 +34,11 @@
 
 .edges__inner {
 	position: relative;
-	padding-top: 341px;
-
-	background-image: url("../img/edges-bg.png");
+	padding-top: 439px;
+	background-image: url(../img/edges-bg.png);
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	background-size: 100%;
+	background-size: 123%;
 
 	&::after,
 	&::before {
@@ -54,7 +53,7 @@
 		height: 100%;
 		width: 100vw;
 
-		top: 25px;
+		top: 60px;
 		left: 99%;
 	}
 
@@ -62,16 +61,22 @@
 		height: 100%;
 		width: 100vw;
 
-		top: 151px;
+		top: 213px;
 		right: 99%;
 	}
 
 	@include media-laptop {
-		margin: 0 -15px -1px;
+		margin: 0 -30px -1px;
 
-		&::after,
+		background-size: 110%;
+		padding-top: 35%;
+
 		&::before {
-			display: none;
+			top: 226px;
+		}
+
+		&::after {
+			top: 83px;
 		}
 	}
 
@@ -80,6 +85,11 @@
 
 		margin: 0;
 		padding: 0;
+
+		&::after,
+		&::before {
+			display: none;
+		}
 	}
 }
 
@@ -100,35 +110,39 @@
 .edges__item {
 	position: absolute;
 
+	z-index: 1;
+
 	max-width: 300px;
 	width: 100%;
 
 	&:nth-child(1) {
 		top: 61%;
-		left: 19%;
+		left: 13%;
 	}
 
 	&:nth-child(2) {
-		top: 45%;
+		top: 47%;
 		left: 46%;
 	}
 
 	&:nth-child(3) {
-		top: 29%;
-		left: 80%;
+		top: 31%;
+		left: 86%;
 	}
 
 	@include media-laptop {
 		&:nth-child(1) {
-			top: 61%;
+			top: 58%;
+			left: 15%;
 		}
 
 		&:nth-child(2) {
-			top: 47%;
+			top: 44%;
 		}
 
 		&:nth-child(3) {
-			top: 32%;
+			top: 27%;
+			left: 82%;
 		}
 	}
 

@@ -6,6 +6,18 @@
 
 	background-color: $whiteAlpha;
 
+	&--md {
+		.info__slider {
+			img {
+				max-height: 455px;
+			}
+		}
+
+		.info__descrip {
+			padding: 30px 67px 30px 60px;
+		}
+	}
+
 	@include media-tablet-sm {
 		flex-direction: column;
 		align-items: unset;
@@ -21,7 +33,7 @@ li.info {
 .info__slider {
 	position: relative;
 
-	max-width: 653px;
+	max-width: 654px;
 	width: 100%;
 	height: 100%;
 
@@ -32,14 +44,10 @@ li.info {
 	img {
 		max-height: 575px;
 		height: 100%;
-		object-fit: cover;
-
-		@include media-laptop {
-			width: unset;
-		}
 
 		@include media-tablet-sm {
 			width: 100%;
+			object-fit: cover;
 		}
 	}
 

@@ -77,14 +77,16 @@
 		color: $whiteAlpha;
 		font-size: 14px;
 
-		transition: color 0.1s linear;
+		border-bottom: 1px solid transparent;
+
+		transition: border-color 0.1s linear;
 
 		&:hover {
-			color: darken($whiteAlpha, 15);
+			border-color: $whiteAlpha;
 		}
 
 		&.active {
-			border-bottom: 1px solid $whiteAlpha;
+			border-color: $whiteAlpha;
 		}
 	}
 
