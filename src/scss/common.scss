@@ -18,12 +18,12 @@
 }
 
 .sections {
-	padding: 100px 0 130px;
+	padding: 50px 0 130px;
 
 	background-color: $blackAlpha;
 
 	@include media-laptop {
-		padding: 50px 0 130px;
+		padding: 30px 0 130px;
 	}
 }
 
@@ -52,7 +52,7 @@
 .title-secondary {
 	font-size: 30px;
 	font-family: $fontSecondary;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 
 	&--dark {
 		color: $blackAlpha;

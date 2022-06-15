@@ -172,6 +172,12 @@
 
 	a {
 		color: $blackAlpha;
+
+		transition: color 0.1s linear;
+
+		&:hover {
+			color: #000;
+		}
 	}
 }
 

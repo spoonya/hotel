@@ -53,6 +53,10 @@ li.info {
 		max-height: 575px;
 		height: 100%;
 
+		@include media-laptop {
+			width: unset;
+		}
+
 		@include media-tablet-sm {
 			width: 100%;
 			object-fit: cover;
