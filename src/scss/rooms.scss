@@ -9,5 +9,9 @@
 .rooms__list {
 	.info:not(:last-child) {
 		margin-bottom: 55px;
+
+		@include media-tablet-lg {
+			margin-bottom: 30px;
+		}
 	}
 }

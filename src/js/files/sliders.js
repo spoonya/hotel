@@ -756,14 +756,11 @@ function initSliders() {
 			//preloadImages: false,
 			//lazy: true,
 
-			/*
 			// Эффекты
-			effect: 'fade',
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
-			*/
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
 
 			pagination: {
 				el: ".slider-pagination",
@@ -799,14 +796,89 @@ function initSliders() {
 			//preloadImages: false,
 			//lazy: true,
 
-			/*
 			// Эффекты
-			effect: 'fade',
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
+
+			pagination: {
+				el: ".slider-pagination",
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// События
+			on: {},
+		});
+	}
+
+	if (document.querySelector("#swiper-contacts-1")) {
+		new Swiper("#swiper-contacts-1", {
+			modules: [Pagination, Autoplay],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			// Эффекты
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
+
+			pagination: {
+				el: ".slider-pagination",
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
 			*/
+
+			// События
+			on: {},
+		});
+	}
+
+	if (document.querySelector("#swiper-contacts-2")) {
+		new Swiper("#swiper-contacts-2", {
+			modules: [Pagination, Autoplay],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			// Эффекты
+			autoplay: {
+				delay: 4000,
+				disableOnInteraction: false,
+			},
 
 			pagination: {
 				el: ".slider-pagination",

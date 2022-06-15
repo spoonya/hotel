@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.html',{
+"title":"Контакты"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html',{})
+    <main id="page" class="page">
+      <section class="contacts section">
+        <div class="container">
+          <h1 class="title">Контакты</h1>
+          <div class="contacts__sliders section">
+            <div id="swiper-contacts-1" class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/contacts-slide-1.1.jpg" width="570" height="511" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/contacts-slide-1.2.jpg" width="570" height="511" alt="">
+                </div>
+              </div>
+              <div class="contacts__sliders-pagination slider-pagination"></div>
+            </div>
+            <div id="swiper-contacts-2" class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/contacts-slide-1.2.jpg" width="570" height="511" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/contacts-slide-1.1.jpg" width="570" height="511" alt="">
+                </div>
+              </div>
+              <div class="contacts__sliders-pagination slider-pagination"></div>
+            </div>
+            <div class="contacts__sliders-arrow"></div>
+          </div>
+          <div class="contacts__info">
+            <div class="contacts__descrip">
+              <h2 class="contacts__info-title title-secondary title-secondary--dark">Как нас найти</h2>
+              <div class="contacts__info-item">
+                <h3 class="contacts__info-item-title title-secondary title-secondary--dark">Адрес:</h3>
+                <ul>
+                  <li>
+                    <a href="#" target="_blank">Выборг, ул. Железнодорожная, 5</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__info-item">
+                <h3 class="contacts__info-item-title title-secondary title-secondary--dark">Телефон:</h3>
+                <ul>
+                  <li>
+                    <a href="tel:+78137825744">+7 (813) 782-57-44</a>
+                  </li>
+                  <li>
+                    <a href="tel:+78137822383">+7 (813) 782-23-83</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__info-item">
+                <h3 class="contacts__info-item-title title-secondary title-secondary--dark">Социальные сети:</h3>
+                <ul class="social-list">
+                  <li>
+                    <a href="#" target="_blank" aria-label="telegram">
+                      <img src="img/telegram.jpg" width="34" height="34" alt="" loading="lazy">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" aria-label="telegram">
+                      <img src="img/vk.jpg" width="34" height="34" alt="" loading="lazy">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" aria-label="telegram">
+                      <img src="img/youtube.jpg" width="34" height="34" alt="" loading="lazy">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contacts__video" data-video-container>
+              <div class="contacts__video-cover active" data-video-cover>
+                <img src="img/video-cover.jpg" width="555" height="343" alt="">
+                <button data-video-play></button>
+              </div>
+              <div class="contacts__video-wrapper">
+                <iframe width="555" height="343" data-src="https://www.youtube.com/embed/C0DPdy98e4c?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Offer-->
+      <div class="offer section">
+        <div class="container">
+          <div id="swiper-offer" class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-breakfast.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Завтрак</p>
+                  <div class="offer-slide__text">
+                    <p>В стоимость номера входит бесплатный завтрак по стистеме шведский стол. Стоит попробовать.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-bar-1.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Бар</p>
+                  <div class="offer-slide__text">
+                    <p>Приятное место. Первоклассные бармены. Отличные напитки. Шикарная отмосфера.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-zal.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Банкетный зал</p>
+                  <div class="offer-slide__text">
+                    <p>Тихое и спокойное место, где подают вкуснейшие блюда, разработанные лучшим шеф-поваром.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-sauna.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Сауна</p>
+                  <div class="offer-slide__text">
+                    <p>Среди нас есть те, кто любит отдохнуть в сауне? Если да, то Вам сюда. Запланируйте время отдыха уже сейчас.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-bar-2.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Бар</p>
+                  <div class="offer-slide__text">
+                    <p>Приятное место. Первоклассные бармены. Отличные напитки. Шикарная отмосфера.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+              <div class="swiper-slide offer-slide">
+                <img class="offer-slide__img" src="img/offer-slide-zal.jpg" width="363" height="345" alt="">
+                <div class="offer-slide__descrip">
+                  <p class="offer-slide__title title-secondary title-secondary--dark">Ресторан</p>
+                  <div class="offer-slide__text">
+                    <p>Тихое и спокойное место, где подают вкуснейшие блюда, разработанные лучшим шеф-поваром.</p>
+                  </div>
+                  <button class="offer-slide__button" type="button" data-modal-target="modal-offer-tariff" aria-label="подробнее"></button>
+                </div>
+              </div>
+            </div>
+            <div class="offer__controls">
+              <button class="slider-button-prev" aria-label="предыдущий слайд"></button>
+              <div class="slider-pagination"></div>
+              <button class="slider-button-next" aria-label="следующий слайд"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/_footer.html', {})
+  </div>
+  <!--Modal-about-->
+  @@include('html/index/_modal-about.html',{})
+  <!--Modal-offer-tarif-->
+  @@include('html/_modal-offer-tariff.html',{})
+  <!--Modal-offer-kids-->
+  @@include('html/_modal-offer-kids.html',{})
+  <!--Modal-offer-animals-->
+  @@include('html/_modal-offer-animals.html',{})
+  <!--Modal-offer-breakfast-->
+  @@include('html/_modal-offer-breakfast.html',{})
+  <!--Modal-offer-lunch-->
+  @@include('html/_modal-offer-lunch.html',{})
+  <!--Modal-offer-early-booking-->
+  @@include('html/_modal-offer-early-booking.html',{})
+  <!--Modal-book-->
+  @@include('html/_modal-book.html',{})
+  @@include('html/_js.html',{})
+</body>
+
+</html>
