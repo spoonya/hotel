@@ -88,15 +88,19 @@
 	min-height: 343px;
 	flex: 0 0 343px;
 
+	overflow: hidden;
+
 	img {
 		height: 100%;
-
-		object-fit: cover;
 	}
 
 	@include media-laptop {
 		max-height: 250px;
 		min-height: 250px;
+
+		img {
+			object-fit: cover;
+		}
 	}
 
 	@include media-phone-lg {

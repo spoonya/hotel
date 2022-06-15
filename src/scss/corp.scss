@@ -86,4 +86,8 @@
 	@include media-laptop {
 		padding: 30px;
 	}
+
+	@include media-tablet-sm {
+		padding: 20px;
+	}
 }

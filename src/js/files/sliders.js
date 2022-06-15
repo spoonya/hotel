@@ -103,7 +103,7 @@ function initSliders() {
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			loop: true,
+			loop: false,
 			//preloadImages: false,
 			//lazy: true,
 

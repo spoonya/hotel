@@ -23,14 +23,6 @@
 	}
 }
 
-.modal-about__title {
-	margin-bottom: 30px;
-
-	@include media-tablet-sm {
-		margin-bottom: 20px;
-	}
-}
-
 .modal-about__subtitle {
 	color: $blackAlpha;
 	font-family: $fontSecondary;
