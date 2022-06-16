@@ -98,6 +98,10 @@
 	@include media-tablet-sm {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	@include media-phone-sm {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 .restaurant__about-item {
@@ -115,6 +119,10 @@
 		.restaurant__about-item-descrip {
 			opacity: 1;
 		}
+	}
+
+	@include media-phone-sm {
+		max-height: 250px;
 	}
 }
 
