@@ -897,6 +897,166 @@ function initSliders() {
 			on: {},
 		});
 	}
+
+	if (document.querySelector("#swiper-info-restaurant-banket")) {
+		new Swiper("#swiper-info-restaurant-banket", {
+			modules: [Pagination],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			allowTouchMove: false,
+			//preloadImages: false,
+			//lazy: true,
+
+			// Эффекты
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
+
+			pagination: {
+				el: ".slider-pagination",
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// События
+			on: {},
+		});
+	}
+
+	if (document.querySelector("#swiper-info-restaurant-alleya")) {
+		new Swiper("#swiper-info-restaurant-alleya", {
+			modules: [Pagination],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			allowTouchMove: false,
+			//preloadImages: false,
+			//lazy: true,
+
+			// Эффекты
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
+
+			pagination: {
+				el: ".slider-pagination",
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// События
+			on: {},
+		});
+	}
+
+	if (document.querySelector("#swiper-info-restaurant-baltic")) {
+		new Swiper("#swiper-info-restaurant-baltic", {
+			modules: [Pagination],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			allowTouchMove: false,
+			//preloadImages: false,
+			//lazy: true,
+
+			// Эффекты
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
+
+			pagination: {
+				el: ".slider-pagination",
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// События
+			on: {},
+		});
+	}
+
+	if (document.querySelector("#swiper-info-restaurant-terrasa")) {
+		new Swiper("#swiper-info-restaurant-terrasa", {
+			modules: [Pagination],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 0,
+			speed: 800,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			allowTouchMove: false,
+			//preloadImages: false,
+			//lazy: true,
+
+			// Эффекты
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// },
+
+			pagination: {
+				el: ".slider-pagination",
+				clickable: true,
+			},
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// События
+			on: {},
+		});
+	}
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {

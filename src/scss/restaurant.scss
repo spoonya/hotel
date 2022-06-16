@@ -1,0 +1,227 @@
+.restaurant__title-wrapper {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+
+	margin-bottom: 50px;
+
+	@include media-phone-lg {
+		flex-direction: column;
+
+		margin-bottom: 25px;
+	}
+}
+
+.restaurant__title {
+	font-size: 120px;
+
+	line-height: 0.8;
+
+	margin-bottom: 0;
+	margin-right: 30px;
+
+	@include media-laptop {
+		font-size: 80px;
+	}
+
+	@include media-tablet-lg {
+		font-size: 50px;
+	}
+
+	@include media-phone-lg {
+		font-size: 30px;
+
+		margin-bottom: 15px;
+	}
+}
+
+.restaurant__subtitle-wrapper {
+	border-bottom: 1px solid;
+	flex-grow: 1;
+
+	@include media-phone-lg {
+		border-bottom: none;
+	}
+}
+
+.restaurant__subtitle {
+	margin-bottom: 0;
+
+	text-align: right;
+
+	@include media-phone-lg {
+		text-align: left;
+	}
+}
+
+.restaurant__descrip-text {
+	p:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}
+
+.restaurant__info-top {
+	margin-bottom: 10px;
+}
+
+.restaurant__about-title {
+	display: flex;
+	justify-content: space-between;
+
+	&::after {
+		display: inline-flex;
+
+		content: "";
+
+		height: 1px;
+		width: 30%;
+
+		background-color: $whiteAlpha;
+	}
+
+	@include media-phone-lg {
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.restaurant__about-items {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+
+	@include media-tablet-lg {
+		grid-gap: 15px;
+	}
+
+	@include media-tablet-sm {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.restaurant__about-item {
+	position: relative;
+
+	max-height: 382px;
+
+	img {
+		object-fit: cover;
+		max-height: 100%;
+		height: 100%;
+	}
+
+	&:hover {
+		.restaurant__about-item-descrip {
+			opacity: 1;
+		}
+	}
+}
+
+.restaurant__about-item-descrip {
+	position: absolute;
+
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	padding-right: 10px;
+
+	background-color: $blackAlpha;
+
+	overflow-y: auto;
+
+	opacity: 0;
+
+	transition: opacity 0.2s ease;
+}
+
+.restaurant__about-item-text {
+	p:not(:last-child),
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	@include media-tablet-lg {
+		font-size: 16px;
+
+		p:not(:last-child),
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.restaurant__about-item-disclaimer {
+	font-family: $fontSecondary;
+
+	&:not(:last-child),
+	p:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	@include media-tablet-lg {
+		font-size: 16px;
+
+		p:not(:last-child),
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.restaurant__about-item-title {
+	margin-bottom: 15px;
+}
+
+.restaurant__job-text {
+	max-width: 981px;
+	width: 100%;
+
+	p {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.restaurant__menu {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.restaurant__menu-content {
+	padding: 220px 100px 50px;
+
+	@include media-tablet-lg {
+		padding: 100px 50px 50px;
+	}
+
+	@include media-tablet-sm {
+		padding: 100px 30px 30px;
+	}
+}
+
+.restaurant__menu-title {
+	font-size: 70px;
+
+	@include media-tablet-lg {
+		font-size: 55px;
+	}
+
+	@include media-tablet-sm {
+		font-size: 40px;
+	}
+
+	@include media-phone-sm {
+		font-size: 30px;
+	}
+}
+
+.restaurant__menu-button {
+	font-size: 22px;
+
+	padding: 8px 20px;
+}

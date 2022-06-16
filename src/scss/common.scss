@@ -219,3 +219,18 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.scroll-element {
+	&::-webkit-scrollbar {
+		width: 5px;
+		background: $blackAlpha;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $whiteAlpha;
+		border-radius: 10px;
+	}
+
+	scrollbar-color: $whiteAlpha transparent;
+	scrollbar-width: thin;
+}
