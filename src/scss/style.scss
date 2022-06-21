@@ -58,8 +58,14 @@ body {
 	color: $whiteAlpha;
 	background-color: $blackAlpha;
 
+	overflow: hidden;
+	touch-action: none;
+
 	.loaded & {
 		opacity: 1;
+
+		overflow: unset;
+		touch-action: unset;
 	}
 }
 
