@@ -83,8 +83,16 @@
 }
 
 .form-order__input {
+	display: flex;
+	flex: 1 0 100%;
+	justify-content: center;
+
 	padding: 15px;
 	max-height: 45px;
+	min-height: 45px;
+
+	-webkit-appearance: textfield;
+	-moz-appearance: textfield;
 
 	height: 100%;
 	width: 100%;
